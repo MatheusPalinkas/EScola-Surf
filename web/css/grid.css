@@ -1,34 +1,17 @@
-*, *:before, *:after {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box; 
-    -moz-box-sizing: border-box; 
-    box-sizing: border-box;
-}
 .container {
     width: 1170px;
+    height: 100%;
     margin: 0 auto;
     padding: 0px;
     position: relative;
+    display: flex;
+    justify-content: flex-start;
 }
-.container:after, .container:before {
-    content: " ";
-    display: table;
-}
-.container:after {
-    clear: both;
-}
-.g-1{
-    float: left;
-    margin-right: 30px;
-}
+
 .g-12{
-    float: left;
     margin-left: 30px;
 }
-.g-2, .g-3, .g-4, .g-5, .g-6, .g-7, .g-8, .g-9, .g-10, .g-11{
-    float: left;
-    margin-left: 30px;
+.g-1, .g-2, .g-3, .g-4, .g-5, .g-6, .g-7, .g-8, .g-9, .g-10, .g-11{
     margin-right: 30px;
 }
   

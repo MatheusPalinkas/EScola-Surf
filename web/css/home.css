@@ -1,0 +1,75 @@
+.hora-funcionamento{
+    background: #1188EE;
+    height: 30px;
+}
+.header-menu{
+    background: #17212B;
+}
+.menu{
+    justify-content: space-between;
+    align-content: center;
+    align-content: center;
+}
+
+.header-navegacao ul li a{
+    display: block;
+    font-size: 16px;
+    padding: 5px 15px;
+    margin: auto;
+
+}
+a.matricula::after{
+    content: '';
+    display: block;
+    width: 100px;
+    border-bottom:2px solid #EE2211;
+}
+div.divisor{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    margin: auto;
+}
+div.intro{
+    height: 400px;
+    width: 100vw;
+    background: url("../assets/fotos/bg-intro.jpg");
+}
+.matricula-se{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.matricula-se input[type="email"]{
+    border: 0;
+    height: 50px;
+    width: 100%;
+    max-width: 350px;
+    background: #FBF7F7;
+    border-radius: 5px 0px 0px 5px;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #63717D;
+    box-shadow: 0px 2px 2px rgba(124, 136, 148, 0.4);
+}
+.matricula-se .btn-matricula{
+    border: 0;
+    height: 50px;
+    background: #EE2211;
+    border-radius: 0px 5px 5px 0px;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FAFAFA;
+    box-shadow: 0px 2px 2px rgba(124, 136, 148, 0.4);
+    text-transform: uppercase;
+}
+.matricula-se .btn-matricula::after{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    background: url('../assets/icons/seta.svg') no-repeat center;
+}

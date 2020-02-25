@@ -1,0 +1,46 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css?family=Alice|Nunito&display=swap');
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+a, button, input[type=button], input[type=submit]{
+    cursor: pointer;
+}
+p, a,input, button{
+    font-size: 12px;
+    font-family: 'Nunito';
+}
+p, a{    
+    color: #fafafa;
+    padding: 10px 0;
+    font-weight: bold;
+}
+ul, ol{
+    list-style: none;
+    display: flex;
+    height: 100%;
+}
+ul li, ol li{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+h1{
+    font-size: 72px;
+    font-family: 'Alice';
+    color: #fafafa;
+    font-weight: normal;
+}
+
+.titulo-page{
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
