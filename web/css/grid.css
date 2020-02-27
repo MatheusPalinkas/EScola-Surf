@@ -1,5 +1,5 @@
 .container {
-    width: 1170px;
+    width: 92vw;
     height: 100%;
     margin: 0 auto;
     padding: 0px;
@@ -7,25 +7,23 @@
     display: flex;
     justify-content: flex-start;
 }
-
 .g-12{
     margin-left: 30px;
 }
 .g-1, .g-2, .g-3, .g-4, .g-5, .g-6, .g-7, .g-8, .g-9, .g-10, .g-11{
     margin-right: 30px;
 }
-  
-  .g-1 	{width: 70px;}
-  .g-2 	{width: 170px;}
-  .g-3 	{width: 270px;}
-  .g-4 	{width: 370px;}
-  .g-5 	{width: 470px;}
-  .g-6 	{width: 570px;}
-  .g-7 	{width: 670px;}
-  .g-8 	{width: 770px;}
-  .g-9 	{width: 870px;}
-  .g-10 	{width: 970px;}
-  .g-11 	{width: 1070px;}
-  .g-12 	{width: 1170px;}
+  .g-1 	{width: calc(92vw / 12 -30px);}
+  .g-2 	{width: calc(92vw / 12 * 2 - 30px);}
+  .g-3 	{width: calc(92vw / 12 * 3 - 30px);}
+  .g-4 	{width: calc(92vw / 12 * 4 - 30px);}
+  .g-5 	{width: calc(92vw / 12 * 5 - 30px);}
+  .g-6 	{width: calc(92vw / 12 * 6 - 30px);}
+  .g-7 	{width: calc(92vw / 12 * 7 - 30px);}
+  .g-8 	{width: calc(92vw / 12 * 8 - 30px);}
+  .g-9 	{width: calc(92vw / 12 * 9 - 30px);}
+  .g-10 {width: calc(92vw / 12 * 10 - 30px);}
+  .g-11 {width: calc(92vw / 12 * 11 - 30px);}
+  .g-12 {width: 92vw;}
   
   
