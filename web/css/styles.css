@@ -12,12 +12,15 @@ a, cite{
     font-style: normal;
     text-decoration: none;
 }
-a, button, input[type=button], input[type=submit]{
+a, button, input[type=button], input[type=submit], .btn{
     cursor: pointer;
 }
-p, a, cite,input, button{
+p, a, cite,input, button, h3, h4, h5, h6, .btn, label, textarea{
     font-size: 12px;
     font-family: 'Nunito';
+}
+textarea{
+    resize: none;
 }
 p, a, cite{    
     color: #E8EFF4;
@@ -34,19 +37,108 @@ ul li, ol li{
     flex-direction: row;
     align-content: center;
 }
-h1{
+h1, h2{
     font-size: 72px;
     font-family: 'Alice';
     color: #fafafa;
     font-weight: normal;
+    font-style: normal;
+}
+h6{
+    font-weight: bold;
+    font-size: 18px;
+    color: #17212B;
+    display: flex;
 }
 
+.foco{
+    font-size: 16px;
+    font-weight: bold;
+    color: #17212B;
+}
+.sem-borda{
+    border:none !important;
+}
+.horario-funcionamento{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px solid ;
+    margin: auto 10px auto 0;
+}
+.aberto{
+    border-color: #16C70B;
+}
+.fechado{
+    border-color: #FF3726;
+}
+.azul{
+    color: #1188EE;
+}
+.vermelho{
+    color: #FF3726;
+}
+.btn{
+    padding: 10px 15px;
+    background: #FF3726;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: auto;
+    font-size: 16px;
+}
+.link{
+    padding: 0;
+    border-bottom: 2px solid #FF3726;
+    color: #45535E;
+    font-size: 14px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form label{
+    color: #45535E;
+    font-weight: bold;
+    padding: 0;
+    font-size: 16px;
+}
+form input, form textarea{
+    border: none;
+    background: #E2EBF2;
+    box-shadow: 0px 2px 2px rgba(124, 136, 148, 0.4);
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #17212B;
+    margin-bottom: 15px;
+}
+form button, form input[type="submit"]{
+    text-transform: uppercase;
+    padding: 15px;
+    border: none;
+    background: #FF3726;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #F8F8F8;
+    margin-top: 15px;
+    box-shadow: 0px 2px 2px rgba(124, 136, 148, 0.4);
 
+}
+button img, input[type="submit"] img{
+    margin-left: 10px;
+    box-shadow: none;
+}
 /* Cor do placeholder */
-::-webkit-input-placeholder { color: #BACBD9; }
-:-moz-placeholder { color: #BACBD9; }
-::-moz-placeholder { color: #BACBD9; }
-:-ms-input-placeholder { color: #BACBD9; }
+::-webkit-input-placeholder { color: #63717D; }
+:-moz-placeholder { color: #63717D; }
+::-moz-placeholder { color: #63717D; }
+:-ms-input-placeholder { color: #63717D; }
+
+
+
 
 /* Cabeçalho */
 .header-menu{
@@ -62,9 +154,10 @@ h1{
     font-size: 16px;
     padding: 5px 15px;
     margin: auto;
-    transition: all .3s;
+    transition: all .5s;
 }
 .header-navegacao ul li a:hover{
+    transform: scale(1.1);
     color: #BACBD9;
 }
 a.matricula::after{
@@ -81,7 +174,7 @@ div.divisor{
     margin: auto;
 }
 /* Introdução */
-div.intro{
+section.intro{
     height: 400px;
     width: 100%;
     background-repeat: no-repeat;
@@ -154,4 +247,5 @@ div.intro{
 .rede-social img{
     width: 60%;
     height: 60%;
+    
 }

@@ -30,11 +30,11 @@
 
         <div class="header-menu">
             <div class="container menu">
-                <a href="index.html">
+                <a href="index.html" class="g-4">
                     <img src="./assets/icons/surfbot.svg" alt="Logo da empresa">
                 </a>
-                <nav class="header-navegacao">
-                    <ul>
+                <nav class="header-navegacao g-6 sem-margem">
+                    <ul class="right">
                        <li><a href="./pages/historia.html">História</a></li>
                        <li><div class="divisor"></div></li>
                        <li><a href="./pages/blog.html">Surf Blog</a></li>
@@ -48,20 +48,169 @@
         </div>
     </header>
 
-    <div class="intro">
+    <section class="intro">
      <div class="container">
         <div class="titulo-page">
             <h1>Escola de Surf</h1>
-            <form class="g-6 matricula-se">
+            <form class="g-6  matricula-se row sem-margem">
                 <input type="email" name="email" id="email" placeholder="Email" required />
-                <button class="btn-matricula" type="submit">Matricule-se</button>
+                <button class="btn-matricula" type="submit">
+                    Matricule-se
+                    <img src="./assets/icons/seta.svg" alt="" />
+                </button>
             </form>
         </div>
      </div>
-    </div>
+    </section>
 
+    <section class="praia container col">
+        <div class="descricao-praia g-12">
+            <img src="./assets/fotos/local.jpg" alt="Bangalô da escola" class="g-5"/>
 
-    <div style="height: 2000px;"></div>
+            <div class=" g-6 qualidades sem-margem">
+                <h2><span class="azul">Aulas</span> em uma das melhores praias da <span class="azul">baixada santista</span>.</h2>
+
+                <ul class="lst-qualidades">
+                    <li>
+                        <img src="./assets/icons/distancia.svg" alt="">
+                        <p>8km de costa</p>
+                    </li>
+                    <li>
+                        <img src="./assets/icons/coco.svg" alt="">
+                    <p>Restaurantes a beira mar</p>
+                    </li>
+                    <li>
+                        <img src="./assets/icons/salva-vidas.svg" alt="">
+                        <p>Salva vidas a cada 300m</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="g-10 texto-praia">ssO Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica, </p>
+    </section>
+
+    <section class="aulas">
+        <div class="container col">
+            <img src="./assets/icons/ondas.svg" alt="" class="ondas"">
+            <h2>Aulas</h2>
+
+            <ul class="g-12 planos space">
+                <li class="g-4 card">
+                    <img src="./assets/icons/prancha.svg" alt="">
+                    <h4>Infantil</h4>
+                    <ul class="beneficios">
+                        <li><div class="icon"></div> <p>Público entre 5 e 15 anos</p></li>
+                        <li><div class="icon"></div> <p>Equipamentos fornecidos</p></li>
+                        <li><div class="icon"></div> <p>Horários de sexta á sabado</p></li>
+                        <li><div class="icon"></div> <p>2 horas seguidas de aulas</p></li>
+                    </ul>
+                    <p class="valor">R$ 49,00 / AULA</p>
+                    <a href="./pages/matricula.html" class="btn">Matricule-se <img src="./assets/icons/seta.svg" alt=""></a>
+                </li>
+                <li class="g-4 card">
+                    <img src="./assets/icons/prancha-2.svg" alt="">
+                    <h4>Adulto</h4>
+                    <ul class="beneficios">
+                        <li><div class="icon"></div> <p>Público entre 5 e 15 anos</p></li>
+                        <li><div class="icon"></div> <p>Equipamentos fornecidos</p></li>
+                        <li><div class="icon"></div> <p>Horários de sexta á sabado</p></li>
+                        <li><div class="icon"></div> <p>2 horas seguidas de aulas</p></li>
+                    </ul>
+                    <p class="valor">R$ 49,00 / AULA</p>
+                    <a href="./pages/matricula.html" class="btn">Matricule-se <img src="./assets/icons/seta.svg" alt=""></a>
+                </li>
+                <li class="g-4 sem-margem card">
+                    <img src="./assets/icons/prancha-3.svg" alt="">
+
+                    <h4>Profissional</h4>
+                    <ul class="beneficios">
+                        <li><div class="icon"></div> <p>Público entre 5 e 15 anos</p></li>
+                        <li><div class="icon"></div> <p>Equipamentos fornecidos</p></li>
+                        <li><div class="icon"></div> <p>Horários de sexta á sabado</p></li>
+                        <li><div class="icon"></div> <p>2 horas seguidas de aulas</p></li>
+                    </ul>
+                    <p class="valor">R$ 49,00 / AULA</p>
+                    <a href="./pages/matricula.html" class="btn">Matricule-se <img src="./assets/icons/seta.svg" alt=""></a>
+                </li>
+            </ul>
+
+            <p class="g-4 call">
+                Possui um grupo com mais de <span class="vermelho">4 pessoas</span>? 
+            </br>
+                Entre <a href="./pages/contanto.html" class="link">em contato</a> para um desconto especial
+            </p>
+    </section>
+
+    <section class="container contato">
+        <h2>Contato</h2>
+        <div class="g-12 row infos-dados">
+            <form class="g-5">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite uma mensagem..." required></textarea>
+
+                <button type="submit" class="g-4 sem-margem">Enviar Mensagem<img src="./assets/icons/seta.svg" alt=""></button>
+            </form>
+            <div class="g-2">
+                <div class="linha"></div>
+            </div>
+            <div class="g-5 infos-escola">
+                <div class="dados">
+                    <h6>Endereço</h6>
+                    <p>Praia do sla</p>
+                    <p>Baixada Santista -  SP</p>
+                    <p>Procure onde o segundo sol chegar</p>
+                </div>
+                <div class="dados">
+                    <h6>Email e Telefone</h6>
+                    <p>contato@slaSurf.com</p>
+                    <p>55 13 99999-9999</p>
+                </div>
+                <div class="dados sem-borda">
+                    <h6><div class="horario-funcionamento aberto"></div>Horário</h6>
+                    <p>De sexta à Sábado</p>
+                    <p>Das 06:00 às 14:00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="g-12 row infos-dados">
+            <img src="./assets/fotos/mapa.jpg" alt="mapa de como chegar na escola" class="g-9">
+
+            <div class="g-3 chegar">
+                <h6><div class="horario-funcionamento aberto"></div> Como chegar</h6>
+
+                <ul class="como-chegar">
+                    <li>
+                        <div class="item-lista"></div>
+                        <p>
+                            <span class="foco">onibus</span> blablalblalba
+                        </p>
+                    </li>
+                    <li>
+                        <div class="item-lista"></div>
+                        <p>
+                            <span class="foco">onibus</span> blablalblalba
+                        </p>
+                    </li>
+                    <li>
+                        <div class="item-lista"></div>
+                        <p>
+                            <span class="foco">onibus</span> blablalblalba
+                        </p>
+                    </li>
+                </ul>
+
+                <a href="" class="g-3 btn maps sem-margem">COMO CHEGAR <img src="./assets/icons/seta.svg" alt=""></a>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="coach">
             <blockquote class="container frase-coach" cite="https://www.pensador.com/frase/NjUxMDgw/">
@@ -72,7 +221,7 @@
         <div class="copy">
             <div class="container rodape">
                 <p class="g-6">Surfnet 2020 - com todos direitos reservados</p>
-                <div class="g-3 redes">
+                <div class="g-3 redes sem-margem">
                     <div class="rede-social"><img src="./assets/icons/facebook.svg" alt="facebook"/></div>
                     <div class="rede-social"><img src="./assets/icons/instagram.svg" alt="instagram"/></div>
                     <div class="rede-social"><img src="./assets/icons/twitter.svg" alt="twitter"/></div>
