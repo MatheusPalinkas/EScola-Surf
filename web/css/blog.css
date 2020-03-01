@@ -38,6 +38,55 @@
 
 }
 
+/* intro */
 section.intro{
     background-image: url("../assets/fotos/bg-intro-blog.jpg");
+}
+
+/* posts */
+.posts{
+    margin: 0 auto;
+    padding: 120px 0;
+}
+.navegar-posts a.btn img{
+    margin: 5px 5px auto 5px;
+
+}
+.item-post{
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+.item-post img{
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px #BACBD9, 0px 5px 5px rgba(186, 203, 217, 0.3);
+    margin-right: 60px;
+}
+.titulo-post{
+    margin: 30px 0 30px 0;
+    font-weight: bold;
+    font-size: 36px;
+    color: #17212B;
+}
+.descricao-post{
+    color: #45535E;
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 60px;
+}
+.infos-autor-post p{
+    color: #45535E;
+    font-size: 14px;
+    font-weight: normal;
+    display: flex;
+}
+.infos-autor-post p img{
+    border-radius: 0;
+    box-shadow: none;
+    margin-right: 5px;
+}
+
+/* controles */
+.desativado{
+    visibility: hidden;
 }

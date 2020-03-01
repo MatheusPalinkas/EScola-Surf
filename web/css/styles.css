@@ -15,9 +15,11 @@ a, cite{
 a, button, input[type=button], input[type=submit], .btn{
     cursor: pointer;
 }
+p, a, cite,input, button, h3, h4, h5, h6, .btn, label, textarea, span{
+    font-family: 'Nunito';
+}
 p, a, cite,input, button, h3, h4, h5, h6, .btn, label, textarea{
     font-size: 12px;
-    font-family: 'Nunito';
 }
 textarea{
     resize: none;
@@ -51,6 +53,12 @@ h6{
     display: flex;
 }
 
+.alice{ font-family: 'Alice';   }
+.nunito{    font-family: 'Nunito';  }
+
+.virar-contrario{
+    transform: rotate(180deg);
+}
 .foco{
     font-size: 16px;
     font-weight: bold;
@@ -75,6 +83,16 @@ h6{
 .azul{
     color: #1188EE;
 }
+.qtd{
+    padding: 10px;
+    margin: auto;
+    color: #45535E;
+    background: #E2EBF2;
+    box-shadow: -2px 2px 2px rgba(124, 136, 148, 0.4);
+    border-radius: 5px;
+    font-size: 18px;
+    height: fit-content;
+}
 .vermelho{
     color: #FF3726;
 }
@@ -92,6 +110,10 @@ h6{
     border-bottom: 2px solid #FF3726;
     color: #45535E;
     font-size: 14px;
+}
+.autor::before{
+    content: 'by';
+    margin-right: 5px;
 }
 form{
     display: flex;
