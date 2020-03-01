@@ -1,3 +1,217 @@
 section.intro{
     background-image: url("../assets/fotos/bg-matricula.jpg");
 }
+
+.matricula{
+    margin: 120px auto;
+}
+
+input{
+    width: 100%;
+}
+
+form  fieldset{ 
+    width: 100%;
+    border: none;
+    margin-bottom: 30px;
+}
+form fieldset legend{
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1188EE;
+}
+form fieldset legend::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 500px;
+    margin-top: 15px;
+    background: #E2EBF2;
+}
+form fieldset.form-forma-pagar::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 500px;
+    margin-top: 15px;
+    background: #E2EBF2;
+}
+input[type="radio"]{
+    box-shadow: none;
+    margin: auto 10px auto 0;
+    /*Tirar aparencia padrão*/
+
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #FAFAFA;
+    border: 1px solid #1188EE;
+    padding: 0;
+
+}
+.opcao-pagamento, .opcao-plano{
+    padding: 15px;
+    border-radius: 5px;
+    background: #E2EBF2;
+    position: relative;
+}
+.opcao-plano{
+    background: #FAFAFA;
+    width: 100%;
+}
+.for-select{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.cartao{
+    border-radius: 5px 0 0 5px;
+    border-right: 2px solid #C4C4C4;
+}
+.boleto{
+    border-radius: 0 5px 5px 0;
+}
+.opcao-pagamento input[type="radio"]:checked, .opcao-plano input[type="radio"]:checked{
+    border-width: 6px;
+}
+.formas-pagamento{
+    margin-bottom: 15px;
+}
+#ano-cartao{
+    min-width: 50%;
+}
+
+#forma-cartao{
+    display: none;
+}
+
+input[type="file"]{
+    display: none;
+}
+.caixa-upload{
+    cursor: pointer;
+    height: 200px;
+    background: url("../assets/icons/backup.svg") no-repeat  center;
+    background-color: #E2EBF2;
+    transition: all .2s;
+}
+.caixa-upload:hover{
+    background-position-y: 45%;
+}
+.valor-pagar{
+    font-weight: bold;
+    color: #45535E;
+    font-size: 18px;
+    padding-top: 0;
+}
+.btn{
+    max-width: 300px;
+}
+.btn, #realizar-matricula{
+    background: #0470CC;
+    color: #FAFAFA;
+}
+
+/* planos */
+.escolher-plano legend::after{
+    content: none;
+}
+.planos{
+    width: 450px;
+    margin: 0 auto;
+    background: #E2EBF2;
+    border-radius: 5px;
+    padding: 15px 30px;
+    box-shadow: 0px 2px 2px rgba(124, 136, 148, 0.4);
+}
+#bg-infantil{
+    border-radius: 5px 0 0 5px;
+    border-right: 2px solid #C4C4C4;
+}
+#bg-adulto{
+    border-radius: 0;
+    border-right: 2px solid #C4C4C4;
+}
+#bg-profissional{
+    border-radius: 0 5px 5px 0;
+}
+
+.cards-planos{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+li.card{
+    background: #FFFFFF;
+    border-radius: 5px;
+    position: relative;
+    padding: 30px 0;
+    min-width: 100%;
+    margin: 30px 30px 15px 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 10px 10px #BACBD9, 0px 5px 5px rgba(186, 203, 217, 0.3);
+}
+.planos li img{
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.planos li h4{
+    color: #45535E;
+    font-weight: bold;
+    font-size: 32px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.beneficios{
+    margin: 0 auto;
+    padding: 15px 0;
+    border-top: 2px solid #E2EBF2;
+    border-bottom: 2px solid #E2EBF2;
+    width: 70%;
+    min-width: 200px;
+    flex-direction: column;
+}
+.beneficios li{
+    padding: 5px 0;
+    margin: 0 0 0 15px;
+}
+.beneficios li p{
+    font-size: 14px;
+    color: #45535E;
+}
+.beneficios li .icon{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 3px solid #EE2211;
+    margin: auto 5px;
+} 
+.valor{
+    margin: 15px 0 0 50px;
+    color: #1188EE;
+}
+.card .btn{
+    margin: 10px 50px;
+    max-width: 200px;
+}
+.card .btn img{
+    position: relative;
+    top: 2px;
+    left: 15px;
+
+} 
+
+.selecionar-plano{
+    background: url("../assets/icons/bg-icones.svg") no-repeat right bottom,
+    url("../assets/icons/bg-icones.svg") no-repeat center 120%;
+
+}

@@ -3,7 +3,7 @@
     justify-content: flex-end;
     align-items: center;
 }
-.matricula-se input[type="text"]{
+.matricula-se input[type="search"]{
     border: 0;
     height: 50px;
     width: 100%;
