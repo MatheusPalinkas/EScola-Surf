@@ -61,6 +61,7 @@ section.intro{
     border-radius: 5px;
     box-shadow: 0px 10px 10px #BACBD9, 0px 5px 5px rgba(186, 203, 217, 0.3);
     margin-right: 60px;
+    object-fit: cover;
 }
 .titulo-post{
     margin: 30px 0 30px 0;
@@ -84,6 +85,7 @@ section.intro{
     border-radius: 0;
     box-shadow: none;
     margin-right: 5px;
+    object-fit: none;
 }
 
 /* controles */

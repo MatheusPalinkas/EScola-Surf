@@ -48,17 +48,22 @@ div.titulo-page h2{
 }
 
 /* paragrafo blog */
+.corpo-texto{
+    margin-bottom: 120px;
+}
 .corpo-texto p{
     font-size: 18px;
     color: #45535E;
     font-weight: normal;
     line-height: 200%;
-    margin-bottom: 30px;
 }
 .corpo-texto img{
     border-radius: 5px;
     box-shadow: 0px 10px 10px #BACBD9, 0px 5px 5px rgba(186, 203, 217, 0.3);
-    margin-bottom: 30px;
+    margin: 30px 0;
+    max-height: 350px;
+    object-position: bottom;
+    object-fit: cover;
 }
 
 /* comentarios */
