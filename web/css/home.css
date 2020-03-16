@@ -1,11 +1,17 @@
 .hora-funcionamento{
     background: #1188EE;
-    height: 35px;
+    padding: 10px 0;
 }
+.hora-funcionamento p{
+    padding: 0;
+}
+
+
 .matricula-se{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    width: 100%;
 }
 .matricula-se input[type="email"]{
     border: 0;
@@ -54,7 +60,7 @@ section.intro{
  margin-left: 90px;   
 }
 .descricao-praia .qualidades h2{
-    font-size: 62px;
+    font-size: 3.44em;
     color: #17212B;
 }
 .lst-qualidades{
@@ -70,7 +76,7 @@ section.intro{
 }
 .lst-qualidades li p {
     color: #17212B;
-    font-size: 22px;
+    font-size: 1.23em;
 }
 .lst-qualidades li img{
     box-shadow: none;
@@ -115,6 +121,9 @@ section.intro{
     display: flex;
     flex-direction: column;
     box-shadow: 0px 10px 10px #BACBD9, 0px 5px 5px rgba(186, 203, 217, 0.3);
+    min-width: 370px;
+    width: 100%;
+    margin: 0 10px ;
 }
 .planos li img{
     position: absolute;
@@ -188,6 +197,9 @@ section.intro{
 .infos-dados{
     margin: 30px 0 60px 0;
 }
+.infos-dados .dados >  a{
+    display: none;
+}
 .infos-dados img{
     border-radius: 5px;
     box-shadow: 0px 10px 10px #BACBD9, 0px 5px 5px rgba(186, 203, 217, 0.3);
@@ -241,4 +253,65 @@ section.intro{
 .maps img{
     margin: auto 5px;
     box-shadow: none;
+}
+
+
+/* Tablets */
+@media screen and (max-width: 934px){
+    .hora-funcionamento{
+        display: none;
+    }
+    .matricula-se {
+        margin-top: 20px;
+        width: 75vw;
+    }
+    .descricao-praia{
+        flex-direction: column-reverse;
+    }
+    .descricao-praia img {
+        display: none;
+    }
+    .descricao-praia .qualidades{
+        margin-left: 0;
+    }
+    .descricao-praia .qualidades h2{
+        text-align: center;
+    }
+    .lst-qualidades img{
+        display: block;
+    }
+
+    .planos{
+        padding: 20px 5px;
+        max-width: 380px;
+        width: 80vw;
+        overflow: auto;
+    }
+    .infos-dados{
+        flex-direction: column;
+    }
+    .infos-escola{
+        margin-top: 60px;
+    }
+    .como-chegar-row{
+        display: none;
+    }
+    .infos-dados .dados >  a{
+        display: block;
+        max-width: 200px;
+        width: auto;
+    }
+}
+@media (max-width: 576px) { 
+    .matricula-se {
+        margin-top: 20px;
+        width: 90vw;
+    }
+    .descricao-praia .qualidades h2{
+        font-size: 3em;
+    }
+    .lst-qualidades li > p{
+        font-size: 1.15em;
+    }
+
 }

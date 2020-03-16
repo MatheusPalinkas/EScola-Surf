@@ -15,15 +15,10 @@
     <header>
         <div class="hora-funcionamento">
             <div class="container">
-                <div class="g-6">
-                    <p>Aulas na Praia do Itararé de sexta à domingo das 6h às 14h</p>
-                </div>
-                <div class="g-3">
-                    <p>+55 13 99999-9999</p>
-                </div>
-                <div class="g-3">
-                    <p>Rua vc vai pra la, 1010</p>
-                </div>
+                    <p>Aulas na Praia do Tombo de sexta à domingo das 6h às 14h</p>
+                    <p>contato@surfbot.com</p>
+                    <p>+55 (13) 3449-9030</p>
+                    <p>Rua Jorge Chaddad , 82 – Guarujá - SP</p>
             </div>
 
         </div>
@@ -33,7 +28,7 @@
                 <a href="index.html" class="g-4">
                     <img src="./assets/icons/surfbot.svg" alt="Logo da empresa">
                 </a>
-                <nav class="header-navegacao g-6 sem-margem">
+                <nav class="header-navegacao ">
                     <ul class="right">
                        <li><a href="./pages/historia.html">História</a></li>
                        <li><div class="divisor"></div></li>
@@ -44,6 +39,12 @@
                        <li><a class="matricula" href="./pages/matricula.html">Matricule-se</a></li>
                     </ul>
                 </nav>
+
+                <div class="hamburguer">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
             </div>
         </div>
     </header>
@@ -52,7 +53,7 @@
      <div class="container">
         <div class="titulo-page">
             <h1>Escola de Surf</h1>
-            <form class="g-6  matricula-se row sem-margem">
+            <form class="matricula-se row sem-margem">
                 <input type="email" name="email" id="email" placeholder="Email" required />
                 <button class="btn-matricula" type="submit">
                     Matricule-se
@@ -64,10 +65,10 @@
     </section>
 
     <section class="praia container col">
-        <div class="descricao-praia g-12">
+        <div class="descricao-praia">
             <img src="./assets/fotos/local.jpg" alt="Bangalô da escola" class="g-5"/>
 
-            <div class=" g-6 qualidades sem-margem">
+            <div class="qualidades sem-margem">
                 <h2><span class="azul">Aulas</span> em uma das melhores praias da <span class="azul">baixada santista</span>.</h2>
 
                 <ul class="lst-qualidades">
@@ -94,8 +95,8 @@
             <img src="./assets/icons/ondas.svg" alt="" class="ondas"">
             <h2>Aulas</h2>
 
-            <ul class="g-12 planos space">
-                <li class="g-4 card">
+            <ul class="planos space">
+                <li class="card">
                     <img src="./assets/icons/prancha.svg" alt="">
                     <h4>Infantil</h4>
                     <ul class="beneficios">
@@ -107,7 +108,7 @@
                     <p class="valor">R$ 49,00 / AULA</p>
                     <a href="./pages/matricula.html" class="btn">Matricule-se <img src="./assets/icons/seta.svg" alt=""></a>
                 </li>
-                <li class="g-4 card">
+                <li class="card">
                     <img src="./assets/icons/prancha-2.svg" alt="">
                     <h4>Adulto</h4>
                     <ul class="beneficios">
@@ -119,7 +120,7 @@
                     <p class="valor">R$ 49,00 / AULA</p>
                     <a href="./pages/matricula.html" class="btn">Matricule-se <img src="./assets/icons/seta.svg" alt=""></a>
                 </li>
-                <li class="g-4 sem-margem card">
+                <li class="card">
                     <img src="./assets/icons/prancha-3.svg" alt="">
 
                     <h4>Profissional</h4>
@@ -143,7 +144,7 @@
 
     <section class="container contato">
         <h2>Contato</h2>
-        <div class="g-12 row infos-dados">
+        <div class="row infos-dados">
             <form class="g-5">
                 <label for="nome">Nome</label>
                 <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
@@ -165,6 +166,8 @@
                     <p>Praia do sla</p>
                     <p>Baixada Santista -  SP</p>
                     <p>Procure onde o segundo sol chegar</p>
+                    <a href="" class=" btn maps sem-margem">COMO CHEGAR <img src="./assets/icons/seta.svg" alt=""></a>
+
                 </div>
                 <div class="dados">
                     <h6>Email e Telefone</h6>
@@ -179,7 +182,7 @@
             </div>
         </div>
 
-        <div class="g-12 row infos-dados">
+        <div class="row infos-dados como-chegar-row">
             <img src="./assets/fotos/mapa.jpg" alt="mapa de como chegar na escola" class="g-9">
 
             <div class="g-3 chegar">

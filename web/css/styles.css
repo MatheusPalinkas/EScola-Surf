@@ -15,11 +15,11 @@ a, cite{
 a, button, input[type=button], input[type=submit], select, .btn{
     cursor: pointer;
 }
-p, a, cite,input, button, h3, h4, h5, h6, .btn, label, textarea, span, fieldset{
+p, a, cite,input, button, h3, h4, h5, h6, .btn, label, textarea, fieldset{
     font-family: 'Nunito';
 }
 p, a, cite,input, button, h3, h4, h5, h6, .btn, label, textarea{
-    font-size: 12px;
+    font-size: 0.7em;
 }
 textarea{
     resize: none;
@@ -40,7 +40,7 @@ ul li, ol li{
     align-content: center;
 }
 h1, h2{
-    font-size: 72px;
+    font-size: 4em;
     font-family: 'Alice';
     color: #fafafa;
     font-weight: normal;
@@ -185,7 +185,6 @@ button img, input[type="submit"] img{
 .menu{
     justify-content: space-between;
     align-content: center;
-    align-content: center;
 }
 .header-navegacao ul li a{
     display: block;
@@ -211,8 +210,25 @@ div.divisor{
     border: 2px solid #FFFFFF;
     margin: auto;
 }
+.hamburguer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+    padding: 5px;
+    cursor: pointer;
+}
+.hamburguer div.line{
+    width: 40px;
+    height: 3px;
+    background: #E8EFF4;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+
 /* Introdução */
-section.intro{
+.intro{
     height: 400px;
     width: 100%;
     background-repeat: no-repeat;
@@ -225,6 +241,9 @@ section.intro{
     margin-bottom: 60px;
     display: flex;
     justify-content: space-between;
+}
+.titulo-page h1{
+    min-width: 500px;
 }
 
 /* Rodapé */
@@ -243,9 +262,9 @@ section.intro{
     z-index: 2;
 }
 .frase-coach p{
-    font-size: 62px;
+    font-size: 3.45em;
     font-family: 'Alice';
-    width: 650px;
+    max-width: 650px;
     text-align: center;
     font-weight: normal;
     margin: 0 auto;
@@ -260,7 +279,7 @@ section.intro{
     background: #0470CC;
 }
 .copy .rodape p{
-    font-size: 16px;
+    font-size: 1em;
     padding: 15px 0;
     margin: auto 0;
 }
@@ -286,4 +305,37 @@ section.intro{
     width: 60%;
     height: 60%;
     
+}
+
+
+@media screen and (max-width: 934px){
+    .header-navegacao{
+        display: none;
+    }
+    .hamburguer{
+        display: flex;
+    }
+    .titulo-page{
+        flex-direction: column;
+    }
+    .titulo-page h1{
+        min-width: auto;
+    }
+    .redes{
+        justify-content: flex-end;
+    }
+    .redes .rede-social{
+        margin-right: 15px;
+    }
+}
+@media (max-width: 576px) { 
+    .rodape{
+        flex-direction: column;
+    }
+    .redes{
+        justify-content: start;
+    }
+    .frase-coach p{
+        font-size: 2.125em;
+    }
 }

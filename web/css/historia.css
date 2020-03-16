@@ -1,3 +1,61 @@
-section.intro{
+.intro{
     background-image: url("../assets/fotos/bg-intro-historia.jpg");
+}
+section, .col{
+    display: flex;
+    flex-direction: column;
+}
+section img{
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px #BACBD9, 0px 5px 5px rgba(186, 203, 217, 0.3);
+    margin-bottom: 30px;
+    max-height: 420px;
+}
+section h2{
+    color: #17212B;
+    text-align: center;
+}
+section h2:after{
+    content: '';
+    display: block;
+    margin: 30px auto 60px auto;
+    height: 2px;
+    width: 630px;
+    background: #BACBD9;
+}
+section p{
+    color: #17212B;
+    font-size: 1.125em;
+    font-weight: normal;
+    line-height: 200%;
+}
+.origin{
+    margin: 90px auto;    
+}
+
+ .quebra{
+    display: flex;
+    flex-direction: row;
+
+}
+.text-esquerda{
+    max-width: 560px;
+    margin-right: 40px;
+    padding-top: 0px;
+}
+.text-direita{
+    max-width: 560px;
+    margin-left: 40px;
+    padding-top: 0px;
+}
+.surf-esporte{
+    padding: 60px 0;
+    background: #E2EBF2;
+}
+
+.self-historia{
+    margin: 60px auto;
+}
+.self-historia > img{
+    margin-top: 30px;
 }
