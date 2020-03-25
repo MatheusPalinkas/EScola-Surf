@@ -168,12 +168,29 @@ button img, input[type="submit"] img{
     margin-left: 10px;
     box-shadow: none;
 }
+iframe{
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px #BACBD9, 0px 5px 5px rgba(186, 203, 217, 0.3);
+    max-height: 300px;
+}
 /* Cor do placeholder */
 .placeholder{   color: #63717D; }
 ::-webkit-input-placeholder { color: #63717D; }
 :-moz-placeholder { color: #63717D; }
 ::-moz-placeholder { color: #63717D; }
 :-ms-input-placeholder { color: #63717D; }
+/*Scroll*/
+::-webkit-scrollbar-track {
+    background-color: #E8EFF4;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background: #0470CC;
+}
+::-webkit-scrollbar-thumb {
+    background: #269BFF;
+}
 
 
 
@@ -192,6 +209,7 @@ button img, input[type="submit"] img{
     padding: 5px 15px;
     margin: auto;
     transition: all .5s;
+    white-space: nowrap;
 }
 .header-navegacao ul li a:hover{
     transform: scale(1.1);
@@ -309,12 +327,7 @@ div.divisor{
 
 
 @media screen and (max-width: 934px){
-    .header-navegacao{
-        display: none;
-    }
-    .hamburguer{
-        display: flex;
-    }
+    
     .titulo-page{
         flex-direction: column;
     }
@@ -328,7 +341,18 @@ div.divisor{
         margin-right: 15px;
     }
 }
+@media (max-width: 660px){
+    .header-navegacao{
+        display: none;
+    }
+    .hamburguer{
+        display: flex;
+    }
+}
 @media (max-width: 576px) { 
+    .planos{
+        width: 90vw !important;
+    }
     .rodape{
         flex-direction: column;
     }
@@ -337,5 +361,12 @@ div.divisor{
     }
     .frase-coach p{
         font-size: 2.125em;
+    }
+
+}
+@media (max-width: 476px) { 
+    h1{
+        
+
     }
 }

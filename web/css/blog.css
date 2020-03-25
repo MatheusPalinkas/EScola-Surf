@@ -1,13 +1,13 @@
-.matricula-se{
+.pesquisar-post{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    width: 100%;
 }
-.matricula-se input[type="search"]{
+.pesquisar-post input[type="search"]{
     border: 0;
     height: 50px;
     width: 100%;
-    max-width: 350px;
     background: #FBF7F7;
     border-radius: 5px 0px 0px 5px;
     padding: 15px 30px;
@@ -17,7 +17,7 @@
     box-shadow: 0px 2px 2px rgba(124, 136, 148, 0.4);
     margin: 0;
 }
-.matricula-se .btn-search-post{
+.pesquisar-post .btn-search-post{
     border: 0;
     height: 50px;
     background: #EE2211;
@@ -32,7 +32,7 @@
     flex-direction: row;
     margin:0; 
 }
-.matricula-se .btn-search-post img{
+.pesquisar-post .btn-search-post img{
     display: inline-block;
     padding: 2px 5px;
 
@@ -55,6 +55,7 @@ section.intro{
 .item-post{
     cursor: pointer;
     margin-bottom: 60px;
+    max-height: 400px;
 }
 .item-post img{
     height: auto;
@@ -68,6 +69,7 @@ section.intro{
     font-weight: bold;
     font-size: 36px;
     color: #17212B;
+    text-transform: initial;
 }
 .descricao-post{
     color: #45535E;
@@ -91,4 +93,72 @@ section.intro{
 /* controles */
 .desativado{
     visibility: hidden;
+}
+
+@media screen and (max-width: 934px){
+    .pesquisar-post{
+        margin-top: 20px;
+    }
+    .item-post img{
+        max-width: 400px;
+    }
+    .infos-post{
+        width: 50vh;
+    }
+    .infos-post h3{
+        font-size: 2.5em;
+    }
+    .infos-post p{
+        font-size: 1.3em;
+    }
+}
+@media screen and (max-width: 820px){
+    .item-post{
+        display: flex;
+        justify-content: center;
+    }
+    .item-post img{
+        margin-right: 0;
+        filter: brightness(35%);
+        height: 100vh;
+        max-height: 300px;
+    }
+    .infos-post{
+        position: absolute;
+    }
+    .infos-post h3, .infos-autor-post p{
+        color: #E8EFF4;
+    }
+    .infos-post p.descricao-post{
+        display: none;
+    }
+    .infos-autor-post p{
+        display: none;
+    }
+    span.autor{
+        display: block;
+
+    }
+}
+@media (max-width: 576px) { 
+    .pesquisar-post{
+        flex-direction: column;
+    }
+    .pesquisar-post input, .pesquisar-post button{
+        border-radius: 5px !important;
+        width: 100%;
+    }
+    .pesquisar-post input{
+        border-radius: 5px 5px 0 0 !important;
+    }
+    .pesquisar-post button{
+        border-radius: 0 0 5px 5px !important;
+    }
+    .infos-post h3{
+        font-size: 2em;
+    }
+    .infos-autor-post p{
+        font-size: 1.125em;
+    }
+
 }

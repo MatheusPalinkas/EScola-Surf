@@ -1,15 +1,12 @@
 section.intro{
     background-image: url("../assets/fotos/bg-matricula.jpg");
 }
-
 .matricula{
     margin: 120px auto;
 }
-
 input{
     width: 100%;
 }
-
 form  fieldset{ 
     width: 100%;
     border: none;
@@ -25,7 +22,8 @@ form fieldset legend::after{
     content: '';
     display: block;
     height: 2px;
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     margin-top: 15px;
     background: #E2EBF2;
 }
@@ -33,7 +31,8 @@ form fieldset.form-forma-pagar::after{
     content: '';
     display: block;
     height: 2px;
-    width: 500px;
+    max-width: 500px;
+    width: calc(100% - 30px);
     margin-top: 15px;
     background: #E2EBF2;
 }
@@ -209,9 +208,46 @@ li.card{
     left: 15px;
 
 } 
-
 .selecionar-plano{
     background: url("../assets/icons/bg-icones.svg") no-repeat right bottom,
     url("../assets/icons/bg-icones.svg") no-repeat center 120%;
 
+}
+
+@media (max-width: 1100px) {
+    .selecionar-plano{
+        margin-bottom: 60px;
+        width: 100%;
+    }
+    main.matricula{
+        flex-direction: column-reverse !important;
+    }
+    main.matricula form {
+        width: 100%;
+    }
+    .matricula form .row .col{
+        width: 100%;        
+    }
+    form select {
+        background-position: 96% center;
+    }
+}
+@media (max-width: 960px){
+    #forma-boleto{
+        padding-right: 30px;
+    }
+}
+@media (max-width: 576px) { 
+    .opcao-plano label{
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 476px) { 
+    .opcao-plano label{
+        font-size: .7em;
+    }
+    .escolher-plano .row.space{
+        flex-direction: column;
+    }
 }

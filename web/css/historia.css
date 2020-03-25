@@ -20,7 +20,8 @@ section h2:after{
     display: block;
     margin: 30px auto 60px auto;
     height: 2px;
-    width: 630px;
+    max-width: 630px;
+    width: 100%;
     background: #BACBD9;
 }
 section p{
@@ -58,4 +59,31 @@ section p{
 }
 .self-historia > img{
     margin-top: 30px;
+}
+
+@media (max-width: 940px){
+    .quebra{
+        flex-direction: column;
+    }
+    .text-esquerda, .text-direita {
+        width: auto;
+        max-width: none;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    section img{
+        max-height: 350px;
+    }
+    .surf-esporte .quebra{
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width: 576px) {
+    section p {
+        font-size: 1em;
+        line-height: 1.8em;
+    }
+    section h2 {
+        font-size: 3em;
+    }
 }

@@ -24,7 +24,7 @@
                         <li><div class="divisor"></div></li>
                         <li><a href="./blog.html">Surf Blog</a></li>
                         <li><div class="divisor"></div></li>
-                        <li><a href="./contanto.html">Contato</a></li>
+                        <li><a href="../index.html#contato">Contato</a></li>
                         <li><div class="divisor"></div></li>
                         <li><a class="matricula" href="./matricula.html">Matricule-se</a></li>
                     </ul>
@@ -160,6 +160,17 @@
                                 <select name="ano-cartao" id="ano-cartao">
                                     <option value="0">Ano</option>
                                     <option value="2019">2019</option>
+                                    <option value="2019">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
                                 </select>
                             </div>
                         </div>
@@ -189,7 +200,7 @@
                 
             </fieldset>
 
-            <p class="valor-pagar">Seu cartão será debitado em <span class="azul">$ 49,00</span></p>
+            <p class="valor-pagar">Seu cartão será debitado em <span class="azul">R$ 49,00</span></p>
             <button class="g-3" id="realizar-matricula">REALIZAR MATRÍCULA</button>
         </form>
 
@@ -200,60 +211,66 @@
                         <legend>Escolha o plano</legend>
         
                         <div class="row space">
-                            <div class="row opcao-plano" id="bg-infantil">
+                            <div class="row opcao-plano" id="bg-infantil" >
                                 <input type="radio" name="op-plano" id="infantil" value="infantil" checked>
                                 <label for="infantil">Infantil</label>
         
-                                <label for="infantil" class="for-select"></label>
+                                <a href="#card-infantil" class="for-select">
+                                    <label for="infantil" class="for-select"></label>
+                                </a>
                             </div>
                             <div class="row opcao-plano " id="bg-adulto">
                                 <input type="radio" name="op-plano" id="adulto" value="adulto" >
                                 <label for="adulto">Adulto</label>
         
-                                <label for="adulto" class="for-select"></label>
+                                <a href="#card-adulto" class="for-select">
+                                    <label for="adulto" class="for-select"></label>
+                                </a>
                             </div>
                             <div class="row opcao-plano " id="bg-profissional">
                                 <input type="radio" name="op-plano" id="profissional" value="profissional">
                                 <label for="profissional">Profissional</label>
-        
-                                <label for="profissional" class="for-select"></label>
+                                
+                                <a href="#card-profissional" class="for-select">
+                                    <label for="profissional" class="for-select"></label>
+                                </a>
                             </div>
                         </div>
                     </fieldset>
                     <ul class="cards-planos">
-                        <li class="card">
+                        <li class="card" id="card-infantil">
                             <img src="../assets/icons/prancha.svg" alt="">
                             <h4>Infantil</h4>
                             <ul class="beneficios">
-                                <li><div class="icon"></div> <p>Público entre 5 e 15 anos</p></li>
+                                <li><div class="icon"></div> <p>Público entre 5 e 12 anos</p></li>
                                 <li><div class="icon"></div> <p>Equipamentos fornecidos</p></li>
-                                <li><div class="icon"></div> <p>Horários de sexta á sabado</p></li>
-                                <li><div class="icon"></div> <p>2 horas seguidas de aulas</p></li>
+                                <li><div class="icon"></div> <p>Horários de sexta a sabado</p></li>
+                                <li><div class="icon"></div> <p>1 horas seguidas de aulas</p></li>
                             </ul>
-                            <p class="valor">R$ 49,00 / AULA</p>
+                            <p class="valor">R$ 34,99 / AULA</p>
                         </li>
-                        <li class="card">
+                        <li class="card" id="card-adulto">
                             <img src="../assets/icons/prancha-2.svg" alt="">
                             <h4>Adulto</h4>
                             <ul class="beneficios">
-                                <li><div class="icon"></div> <p>Público entre 5 e 15 anos</p></li>
+                                <li><div class="icon"></div> <p>Público entre 12 e 75 anos</p></li>
                                 <li><div class="icon"></div> <p>Equipamentos fornecidos</p></li>
-                                <li><div class="icon"></div> <p>Horários de sexta á sabado</p></li>
+                                <li><div class="icon"></div> <p>Horários de sexta a sabado</p></li>
                                 <li><div class="icon"></div> <p>2 horas seguidas de aulas</p></li>
                             </ul>
-                            <p class="valor">R$ 49,00 / AULA</p>
+                            <p class="valor">R$ 44,99 / AULA</p>
                         </li>
-                        <li class="sem-margem card">
+                        <li class="sem-margem card" id="card-profissional">
                             <img src="../assets/icons/prancha-3.svg" alt="">
         
                             <h4>Profissional</h4>
                             <ul class="beneficios">
-                                <li><div class="icon"></div> <p>Público entre 5 e 15 anos</p></li>
-                                <li><div class="icon"></div> <p>Equipamentos fornecidos</p></li>
-                                <li><div class="icon"></div> <p>Horários de sexta á sabado</p></li>
-                                <li><div class="icon"></div> <p>2 horas seguidas de aulas</p></li>
+                                <li><div class="icon"></div> <p>Público: foco em competições</p></li>
+                                <li><div class="icon"></div> <p>Equipamentos não fornecidos</p></li>
+                                <li><div class="icon"></div> <p>Aos Domingos</p></li>
+                                <li><div class="icon"></div> <p>3 horas seguidas de aulas</p></li>
                             </ul>
-                            <p class="valor">R$ 49,00 / AULA</p>
+                            <p class="valor">R$ 84,99 / AULA</p>
                         </li>
                     </ul>
                 </form>
