@@ -1,0 +1,349 @@
+.hora-funcionamento{
+    background: #1188EE;
+    padding: 10px 0;
+}
+.hora-funcionamento p{
+    padding: 0;
+}
+
+
+.matricula-se{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+.matricula-se input[type="email"]{
+    border: 0;
+    height: 50px;
+    width: 100%;
+    background: #FBF7F7;
+    border-radius: 5px 0px 0px 5px;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #17212B;
+    box-shadow: 0px 2px 2px rgba(124, 136, 148, 0.4);
+    margin: 0;
+}
+.matricula-se .btn-matricula{
+    border: 0;
+    margin: 0;
+    min-width: 200px;
+    height: 50px;
+    background: #EE2211;
+    border-radius: 0px 5px 5px 0px;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FAFAFA;
+    box-shadow: 0px 2px 2px rgba(124, 136, 148, 0.4);
+    text-transform: uppercase;
+}
+section.intro{
+    background-image: url("../assets/fotos/bg-intro.jpg");
+}
+
+/* Praia */
+.praia{
+    margin-top: 120px;
+}
+.descricao-praia{
+    display: flex;
+    justify-content: space-between;
+}
+.descricao-praia img {
+    box-shadow: 0px 10px 10px #BACBD9, 0px 5px 5px rgba(186, 203, 217, 0.3);
+    height: 650px;
+}
+.descricao-praia .qualidades{
+ margin-left: 90px;   
+}
+.descricao-praia .qualidades h2{
+    font-size: 3.44em;
+    color: #17212B;
+}
+.lst-qualidades{
+    margin-top: 60px;
+    flex-direction: column;
+}
+.lst-qualidades li:first-child {
+    border-top: 2px solid #BACBD9;
+}
+.lst-qualidades li {
+    border-bottom: 2px solid #BACBD9;
+    padding: 30px 60px;
+}
+.lst-qualidades li p {
+    color: #17212B;
+    font-size: 1.23em;
+}
+.lst-qualidades li img{
+    box-shadow: none;
+    height: auto;
+    margin-right: 30px;
+}
+.texto-praia{
+    font-size: 16px;
+    text-align: center;
+    color: #45535E;
+    margin: 60px auto 0 auto; 
+}
+
+
+/* Aulas */
+.aulas{
+    margin: 90px 0 60px 0;
+    padding: 60px 0;
+    background: #E2EBF2;
+
+}
+.aulas h2{
+    font-size: 62px;
+    color: #17212B;
+    margin: 0 auto;
+}
+.aulas img.ondas{
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.planos{
+    min-height: 420px;
+    margin: 60px auto 30px auto;
+}
+.planos li.card{
+    background: #FFFFFF;
+    border-radius: 5px;
+    position: relative;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 10px 10px #BACBD9, 0px 5px 5px rgba(186, 203, 217, 0.3);
+    min-width: 370px;
+    width: 100%;
+    margin: 0 10px ;
+}
+.planos li img{
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.planos li h4{
+    color: #45535E;
+    font-weight: bold;
+    font-size: 32px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.beneficios{
+    margin: 0 auto;
+    padding: 15px 0;
+    border-top: 2px solid #E2EBF2;
+    border-bottom: 2px solid #E2EBF2;
+    width: 70%;
+    min-width: 200px;
+    flex-direction: column;
+}
+.beneficios li{
+    padding: 5px 0;
+    margin: 0 0 0 15px;
+}
+.beneficios li p{
+    font-size: 14px;
+    color: #45535E;
+}
+.beneficios li .icon{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 3px solid #EE2211;
+    margin: auto 5px;
+} 
+.valor{
+    margin: 15px 0 0 50px;
+    color: #1188EE;
+}
+.card .btn{
+    margin: 10px 50px;
+    max-width: 200px;
+}
+.card .btn img{
+    position: relative;
+    top: 2px;
+    left: 15px;
+
+} 
+.call{
+    margin: 0 auto;
+    color: #45535E;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Contato */
+.contato{
+    margin: 60px auto;
+    flex-direction: column;
+}
+.contato h2{
+    font-size: 62px;
+    color: #45535E;
+    margin: 0 auto;
+}
+
+.infos-dados{
+    margin: 30px 0 60px 0;
+}
+.infos-dados .dados >  a{
+    display: none;
+}
+.infos-dados img{
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px #BACBD9, 0px 5px 5px rgba(186, 203, 217, 0.3);
+}
+.infos-dados form img{
+    box-shadow: none;
+}
+.linha{
+    width: 3px;
+    height: 100%;
+    background: #9BAEBF;
+    margin: 0 auto;
+}
+.dados{
+    margin-top: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #9BAEBF;
+}
+.dados h6{
+    margin-bottom: 15px;
+}
+.dados p{
+    color: #45535E;
+    padding: 5px 0;
+}
+.infos-escola{
+    background: url("../assets/icons/bg-icones.svg") no-repeat right;
+}
+.chegar{
+    margin-top: 30px;
+}
+.como-chegar {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 30px 50px;
+    height: auto;
+}
+.como-chegar li p{
+    color: #63717D;
+}
+.item-lista{
+    margin: auto 10px auto 0;
+    height: 3px;
+    width: 15px;
+    background: #269BFF; 
+    border-radius: 5px;
+}
+.maps{
+    background: #0470CC;
+}
+.maps img{
+    margin: auto 5px;
+    box-shadow: none;
+}
+
+
+/* Tablets */
+@media screen and (max-width: 1230px){
+    .aulas .container{
+        width: 100%;
+    }
+    .planos li.card{
+        min-width: 300px;
+    }
+}
+@media screen and (max-width: 980px){
+    .planos li.card{
+        min-width: 370px;
+    }
+    .planos{
+        padding: 20px 5px;
+        max-width: 380px;
+        width: 80vw;
+        overflow: auto;
+    }
+}
+@media screen and (max-width: 934px){
+    .hora-funcionamento{
+        display: none;
+    }
+    .matricula-se {
+        margin-top: 20px;
+    }
+    .descricao-praia{
+        flex-direction: column-reverse;
+    }
+    .descricao-praia img {
+        display: none;
+    }
+    .descricao-praia .qualidades{
+        margin-left: 0;
+    }
+    .descricao-praia .qualidades h2{
+        text-align: center;
+    }
+    .lst-qualidades img{
+        display: block;
+    }
+    
+    .infos-dados{
+        flex-direction: column;
+    }
+    .infos-escola{
+        margin-top: 60px;
+    }
+    .chegar h6, .chegar ul{
+        display: none;
+    }
+    .infos-dados .dados >  a{
+        display: block;
+        max-width: 200px;
+        width: auto;
+    }
+}
+@media (max-width: 576px) { 
+    .texto-praia{
+        font-size: .8em;
+    }
+    .infos-dados{
+        margin-bottom: 0px;
+    }
+    .como-chegar-row iframe{
+        display: none;
+    }
+    .chegar a{
+        margin-top: 0;
+    }
+    .matricula-se {
+        margin-top: 20px;
+        width: 90vw;
+        flex-direction: column;
+    }
+    .matricula-se input{
+        border-radius: 5px 5px 0 0 !important;
+    }
+    .matricula-se button {
+        width: 100%;
+        border-radius: 0 0 5px 5px !important;
+    } 
+    .descricao-praia .qualidades h2{
+        font-size: 3em;
+    }
+    .lst-qualidades li > p{
+        font-size: 1.15em;
+    }
+
+}

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- folhas de estilo -->
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/matricula.css" />
+
+    <title>Surf</title>
+</head>
+<body>
+    <header>
+        <div class="header-menu">
+            <div class="container menu">
+                <a href="../index.html">
+                    <img src="../assets/icons/surfbot.svg" alt="Logo da empresa">
+                </a>
+                <nav class="header-navegacao">
+                    <ul>
+                        <li><a href="./historia.html">História</a></li>
+                        <li><div class="divisor"></div></li>
+                        <li><a href="./blog.html">Surf Blog</a></li>
+                        <li><div class="divisor"></div></li>
+                        <li><a href="../index.html#contato">Contato</a></li>
+                        <li><div class="divisor"></div></li>
+                        <li><a class="matricula" href="./matricula.html">Matricule-se</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburguer">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="intro">
+     <div class="container">
+        <div class="titulo-page">
+            <h1>Matricule-se</h1>
+            
+        </div>
+     </div>
+    </section>
+
+    <main class="container left matricula">
+        <form class="g-6">
+            <fieldset class="col">
+                <legend>Dados pessoais</legend>
+                <label for="nome">Nome Completo</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" id="cpf" placeholder="111.111.111-11" required>
+
+                <div class="row space">
+                <div class="g-3 col">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" name="endereco" id="endereco" placeholder="Rua, número, bairo" required>
+                </div>
+                <div class="g-3 sem-margem col">
+                    <label for="estado">Estado</label>
+                    <select name="estado" id="estado">
+                        <option value="0">Selecione o estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+                </div>
+
+                <div class="row space">
+                <div class="g-3 col">
+                    <label for="cep">CEP</label>
+                    <input type="text" name="cep" id="cep" placeholder="99.999-999" required>
+                </div>
+                <div class="g-3 sem-margem col">
+                    <label for="cidade">Cidade</label>
+                    <select name="cidade" id="cidade">
+                        <option value="0">Selecione a cidade</option>
+                        <option value="13">Santos</option>
+                    </select>
+                </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-forma-pagar">
+                <legend>Forma de Pagamento</legend>
+
+                <div class="g-5 row formas-pagamento">
+                    <div class="row opcao-pagamento cartao" id="bg-cartao">
+                        <input type="radio" name="op-pagamento" id="cartao" value="cartao" checked>
+                        <label for="cartao">Cartão de Crédito</label>
+
+                        <label for="cartao" class="for-select"></label>
+                    </div>
+                    <div class="row opcao-pagamento boleto">
+                        <input type="radio" name="op-pagamento" id="boleto" value="boleto">
+                        <label for="boleto">Boleto Bancário</label>
+
+                        <label for="boleto" class="for-select"></label>
+                    </div>
+                </div>
+                <fieldset id="forma-cartao">
+                    <div class="row">
+                        <div class="g-3 col left">
+                            <label for="nome-cartao">Nome no Cartão</label>
+                            <input type="text" name="nome-cartao" id="nome-cartao" placeholder="Nome impresso no cartão" required>
+                        </div>
+                        <div class=" col sem-margem space g-3" >
+                            <label for="data-expiracao">Data de Expiração</label>
+                            <div class="row space">
+                                <select name="mes-cartao" id="mes-cartao">
+                                    <option value="0">Mês</option>
+                                    <option value="1">Janeiro</option>
+                                    <option value="2">Fevereiro</option>
+                                    <option value="3">Março</option>
+                                    <option value="4">Abril</option>
+                                    <option value="5">Maio</option>
+                                    <option value="6">Junho</option>
+                                    <option value="7">Julho</option>
+                                    <option value="8">Agosto</option>
+                                    <option value="9">Setembro</option>
+                                    <option value="10">Outubro</option>
+                                    <option value="11">Novembro</option>
+                                    <option value="12">Dezembro</option>
+                                </select>
+
+                                <select name="ano-cartao" id="ano-cartao">
+                                    <option value="0">Ano</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2019">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row space">
+                        <div class="g-3 col">
+                            <label for="num-cartao">Número do Cartão</label>
+                            <input type="text" name="num-cartao" id="num-cartao" placeholder="5555 5555 5555 5555" required>
+                        </div>
+                        <div class="g-3 sem-margem col">
+                            <label for="cod-seg-cartao">Código de Segurança</label>
+                            <input type="text" name="cod-seg-cartao" id="cod-seg-cartao" placeholder="XXX" required>
+                        </div>
+                    </div>
+                </fieldset>
+    
+                <fieldset class="col" id="forma-boleto">
+                    <input type="button" value="Imprimir Boleto" class="btn g-3">
+
+                    
+                    <label for="upload-boleto">Anexar boleto</label>
+                    <input type="file" name="upload-boleto" id="upload-boleto" required/>
+                    <label for="upload-boleto" class="caixa-upload"></label>
+
+                </fieldset>
+                
+            </fieldset>
+
+            <p class="valor-pagar">Seu cartão será debitado em <span class="azul">R$ 49,00</span></p>
+            <button class="g-3" id="realizar-matricula">REALIZAR MATRÍCULA</button>
+        </form>
+
+        <div class="g-6 sem-margem selecionar-plano">
+            <div class="planos">
+                <form action="">
+                    <fieldset class="escolher-plano">
+                        <legend>Escolha o plano</legend>
+        
+                        <div class="row space">
+                            <div class="row opcao-plano" id="bg-infantil" >
+                                <input type="radio" name="op-plano" id="infantil" value="infantil" checked>
+                                <label for="infantil">Infantil</label>
+        
+                                <a href="#card-infantil" class="for-select">
+                                    <label for="infantil" class="for-select"></label>
+                                </a>
+                            </div>
+                            <div class="row opcao-plano " id="bg-adulto">
+                                <input type="radio" name="op-plano" id="adulto" value="adulto" >
+                                <label for="adulto">Adulto</label>
+        
+                                <a href="#card-adulto" class="for-select">
+                                    <label for="adulto" class="for-select"></label>
+                                </a>
+                            </div>
+                            <div class="row opcao-plano " id="bg-profissional">
+                                <input type="radio" name="op-plano" id="profissional" value="profissional">
+                                <label for="profissional">Profissional</label>
+                                
+                                <a href="#card-profissional" class="for-select">
+                                    <label for="profissional" class="for-select"></label>
+                                </a>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <ul class="cards-planos">
+                        <li class="card" id="card-infantil">
+                            <img src="../assets/icons/prancha.svg" alt="">
+                            <h4>Infantil</h4>
+                            <ul class="beneficios">
+                                <li><div class="icon"></div> <p>Público entre 5 e 12 anos</p></li>
+                                <li><div class="icon"></div> <p>Equipamentos fornecidos</p></li>
+                                <li><div class="icon"></div> <p>Horários de sexta a sabado</p></li>
+                                <li><div class="icon"></div> <p>1 horas seguidas de aulas</p></li>
+                            </ul>
+                            <p class="valor">R$ 34,99 / AULA</p>
+                        </li>
+                        <li class="card" id="card-adulto">
+                            <img src="../assets/icons/prancha-2.svg" alt="">
+                            <h4>Adulto</h4>
+                            <ul class="beneficios">
+                                <li><div class="icon"></div> <p>Público entre 12 e 75 anos</p></li>
+                                <li><div class="icon"></div> <p>Equipamentos fornecidos</p></li>
+                                <li><div class="icon"></div> <p>Horários de sexta a sabado</p></li>
+                                <li><div class="icon"></div> <p>2 horas seguidas de aulas</p></li>
+                            </ul>
+                            <p class="valor">R$ 44,99 / AULA</p>
+                        </li>
+                        <li class="sem-margem card" id="card-profissional">
+                            <img src="../assets/icons/prancha-3.svg" alt="">
+        
+                            <h4>Profissional</h4>
+                            <ul class="beneficios">
+                                <li><div class="icon"></div> <p>Público: foco em competições</p></li>
+                                <li><div class="icon"></div> <p>Equipamentos não fornecidos</p></li>
+                                <li><div class="icon"></div> <p>Aos Domingos</p></li>
+                                <li><div class="icon"></div> <p>3 horas seguidas de aulas</p></li>
+                            </ul>
+                            <p class="valor">R$ 84,99 / AULA</p>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="coach">
+            <blockquote class="container frase-coach" cite="https://www.pensador.com/frase/NjUxMDgw/">
+                <p>“O surf libera as ondas de uma vida”</p>
+                <cite>Regis Pereira</cite>
+            </blockquote>
+        </div>
+        <div class="copy">
+            <div class="container rodape">
+                <p class="g-6">Surfnet 2020 - com todos direitos reservados</p>
+                <div class="g-3 redes">
+                    <div class="rede-social"><img src="../assets/icons/facebook.svg" alt="facebook"/></div>
+                    <div class="rede-social"><img src="../assets/icons/instagram.svg" alt="instagram"/></div>
+                    <div class="rede-social"><img src="../assets/icons/twitter.svg" alt="twitter"/></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

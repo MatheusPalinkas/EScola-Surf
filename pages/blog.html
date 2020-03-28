@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- folhas de estilo -->
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/blog.css" />
+
+    <title>Surf</title>
+</head>
+<body>
+    <header>
+        <div class="header-menu">
+            <div class="container menu">
+                <a href="../index.html">
+                    <img src="../assets/icons/surfbot.svg" alt="Logo da empresa">
+                </a>
+                <nav class="header-navegacao">
+                    <ul>
+                        <li><a href="./historia.html">História</a></li>
+                        <li><div class="divisor"></div></li>
+                        <li><a href="./blog.html" >Surf Blog</a></li>
+                        <li><div class="divisor"></div></li>
+                        <li><a href="../index.html#contato">Contato</a></li>
+                        <li><div class="divisor"></div></li>
+                        <li><a class="matricula" href="./matricula.html">Matricule-se</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburguer">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="intro">
+     <div class="container">
+        <div class="titulo-page">
+            <h1>Surf Blog</h1>
+
+            <form class="g-6 pesquisar-post row sem-margem">
+                <input type="search" name="text" id="text" placeholder="Nome do post" required />
+                <button class="btn-search-post" type="submit">
+                    PESQUISAR
+                    <img src="../assets/icons/search.svg" alt="">
+                </button>
+            </form>
+        </div>
+     </div>
+    </section>
+    
+    <main class="container posts col" id="posts">
+        <div class="lst-posts" id="lst-posts">
+            <a href="./posts/post-nazare.html" class="row item-post">
+                <img src="../assets/fotos/nazare.jpg" alt="" class="g-5"/>
+                <div class="g-7 sem-margem infos-post ">
+                    <h3 class="titulo-post">Praia de Nazaré</h3>
+                    <p class="descricao-post">Nesse post você saberá mais sobre a praia de Nazaré que localiza-se a cem quilômetros ao norte de Lisboa e recebe as ondulações gigantes geradas nas tempestades do oceano Atlântico.</p>
+                    <div class="infos-autor-post">
+                        <div class="row">
+                            <p class="g-2"><img src="../assets/icons/relogio.svg" alt="">02, mar 2020</p>
+                            <p class="g-3"><img src="../assets/icons/autor.svg" alt="" ><span class="autor">Rafaela</span></p>
+                        </div>
+                        <div class="row">
+                            <p class="g-1"><img src="../assets/icons/recomendar.svg" alt="">20</p>
+                            <p class="g-1"><img src="../assets/icons/comentarios.svg" alt="">20</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./posts/post-tecnicas.html" class="row item-post">
+                <img src="../assets/fotos/post-tecnicas.jpg" alt="" class="g-5"/>
+                <div class="g-7 sem-margem infos-post ">
+                    <h3 class="titulo-post">Como surfar melhor: Os 10 maiores erros e como corrigi-los</h3>
+                    <p class="descricao-post">Neste post você conhecerá os principais erros cometidos durante a aprendizagem do surf e, além disso, descobrirá como corrigi-los.</p>
+                    <div class="infos-autor-post">
+                        <div class="row">
+                            <p class="g-2"><img src="../assets/icons/relogio.svg" alt="">03, mar 2020 </p>
+                            <p class="g-3"><img src="../assets/icons/autor.svg" alt="" ><span class="autor">Matheus Palinkas</span></p>
+                        </div>
+                        <div class="row">
+                            <p class="g-1"><img src="../assets/icons/recomendar.svg" alt="">50</p>
+                            <p class="g-1"><img src="../assets/icons/comentarios.svg" alt="">10</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./posts/post-tipos-prachas.html" class="row item-post">
+                <img src="../assets/fotos/prancha.jpg" alt="" class="g-5"/>
+                <div class="g-7 sem-margem infos-post ">
+                    <h3 class="titulo-post">Tipos de prancha</h3>
+                    <p class="descricao-post">Esse post trata sobre os principais tipos de pranchas, uma série de guias básicos para que você possa escolher a prancha de surf perfeita.</p>
+                    <div class="infos-autor-post">
+                        <div class="row">
+                            <p class="g-2"><img src="../assets/icons/relogio.svg" alt="">23, fev 2020 </p>
+                            <p class="g-3"><img src="../assets/icons/autor.svg" alt="" ><span class="autor">Isa Felix</span></p>
+                        </div>
+                        <div class="row">
+                            <p class="g-1"><img src="../assets/icons/recomendar.svg" alt="">100</p>
+                            <p class="g-1"><img src="../assets/icons/comentarios.svg" alt="">10</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div class="g-12 row space navegar-posts">
+            <a class="btn desativado"> <img src="../assets/icons/seta.svg" alt="" class="virar-contrario"> página anterior</a>
+            <a class="btn" href="./blog-page-2.html#posts">Próxima página <img src="../assets/icons/seta.svg" alt=""></a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="coach">
+            <blockquote class="container frase-coach" cite="https://www.pensador.com/frase/NjUxMDgw/">
+                <p>“O surf libera as ondas de uma vida”</p>
+                <cite>Regis Pereira</cite>
+            </blockquote>
+        </div>
+        <div class="copy">
+            <div class="container rodape">
+                <p class="g-6">Surfnet 2020 - com todos direitos reservados</p>
+                <div class="g-3 redes">
+                    <div class="rede-social"><img src="../assets/icons/facebook.svg" alt="facebook"/></div>
+                    <div class="rede-social"><img src="../assets/icons/instagram.svg" alt="instagram"/></div>
+                    <div class="rede-social"><img src="../assets/icons/twitter.svg" alt="twitter"/></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

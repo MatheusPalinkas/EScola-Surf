@@ -1,0 +1,52 @@
+.container {
+    width: 92vw;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.g-1, .g-2, .g-3, .g-4, .g-5, .g-6, .g-7, .g-8, .g-9, .g-10, .g-11{
+    margin-right: 30px;
+}
+
+.g-1  {width: calc(92vw / 12 -30px);}
+.g-2  {width: calc(92vw / 12 * 2 - 30px);}
+.g-3  {width: calc(92vw / 12 * 3 - 30px);}
+.g-4  {width: calc(92vw / 12 * 4 - 30px);}
+.g-5  {width: calc(92vw / 12 * 5 - 30px);}
+.g-6  {width: calc(92vw / 12 * 6 - 30px);}
+.g-7  {width: calc(92vw / 12 * 7 - 30px);}
+.g-8  {width: calc(92vw / 12 * 8 - 30px);}
+.g-9  {width: calc(92vw / 12 * 9 - 30px);}
+.g-10 {width: calc(92vw / 12 * 10 - 30px);}
+.g-11 {width: calc(92vw / 12 * 11 - 30px);}
+.g-12 {width: 92vw;}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    justify-content: flex-start !important;
+}
+.right{
+    justify-content: flex-end !important;
+}
+.space{
+    justify-content: space-between !important;
+}
+.sem-margem{
+    margin-right: 0;
+}
+
+
+@media screen and (max-width: 934px){
+    .g-1, .g-2, .g-3, .g-4, .g-5, .g-6, .g-7, .g-8, .g-9, .g-10, .g-11.g-12 {width: 92vw;}
+}
