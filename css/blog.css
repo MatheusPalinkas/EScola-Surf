@@ -128,6 +128,8 @@ section.intro{
     }
     .infos-post h3, .infos-autor-post p{
         color: #E8EFF4;
+        text-align: center;
+        margin-right: 0;
     }
     .infos-post p.descricao-post{
         display: none;
@@ -140,7 +142,7 @@ section.intro{
 
     }
 }
-@media (max-width: 576px) { 
+@media only screen and (max-width: 576px) { 
     .pesquisar-post{
         flex-direction: column;
     }
@@ -161,4 +163,11 @@ section.intro{
         font-size: 1.125em;
     }
 
+}
+@media only screen and (max-width: 390px) { 
+    .infos-post h3{
+        font-size: 1.5em ;
+        max-width: 300px;
+        margin: 30px auto 30px auto;
+    }
 }
