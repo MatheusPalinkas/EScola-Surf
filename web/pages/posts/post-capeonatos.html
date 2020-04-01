@@ -4,57 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" href="../../assets/icons/surf.svg">
+
     <!-- folhas de estilo -->
-    <link rel="stylesheet" href="../../css/grid.css" />
     <link rel="stylesheet" href="../../css/styles.css" />
     <link rel="stylesheet" href="../../css/post.css" />
 
-    <title>Surf</title>
+    <title>Tá dando onda - Campeonatos nacionais</title>
 </head>
 <body>
     <header>
         <div class="header-menu">
             <div class="container menu">
-                <a href="../../index.html">
-                    <img src="../../assets/icons/surfbot.svg" alt="Logo da empresa">
+                <a href="../../index.html" class="g-4">
+                    <img src="../../assets/icons/logo.svg" alt="Logo da empresa">
                 </a>
                 <nav class="header-navegacao">
-                    <ul>
-                        <li><a href="../historia.html">História</a></li>
-                        <li><div class="divisor"></div></li>
-                        <li><a href="../blog.html" >Surf Blog</a></li>
-                        <li><div class="divisor"></div></li>
-                        <li><a href="../../index.html#contato">Contato</a></li>
-                        <li><div class="divisor"></div></li>
-                        <li><a class="matricula" href="../matricula.html">Matricule-se</a></li>
+                    <ul class="right">
+                       <li><a href="../historia.html">História</a></li>
+                       <li><div class="divisor"></div></li>
+                       <li><a href="../blog.html">Surf Blog</a></li>
+                       <li><div class="divisor"></div></li>
+                       <li><a href="../index.html#contato">Contato</a></li>
+                       <li><div class="divisor"></div></li>
+                       <li><a class="matricula" href="../matricula.html">Matricule-se</a></li>
                     </ul>
                 </nav>
-                <div class="hamburguer">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
             </div>
         </div>
     </header>
 
+
     <section class="intro" style="background-image: url('../../assets/fotos/campeonato.jpg');">
-     <div class="container">
-        <div class="titulo-page left">
+        <div class="container titulo-page">
             <a href="../blog-page-2.html">
                 <h1 class="root-page">Surf Blog</h1>
             </a>
             <h2>Campeonatos nacionais</h2>
         </div>
-     </div>
     </section>
 
-    <main class="g-10 text-post">
+    <main class="text-post">
         <div class="cabecalho">
             <h2 class="titulo-post">Campeonatos nacionais</h2>
-            <div class="g-6 row space infos-post">
-                <p class="g-3"><img src="../../assets/icons/autor.svg" alt="" ><span class="azul autor ">Luisa Toni</span></p>
-                <p class="g-2"><img src="../../assets/icons/relogio.svg" alt="">16, jun 2020</p>
+            <div class="infos-post">
+                <p><img src="../../assets/icons/autor.svg" alt="" ><span class="azul autor ">Luisa Toni</span></p>
+                <p><img src="../../assets/icons/relogio.svg" alt="">13 mar 2019</p>
             </div>
         </div>
 
@@ -72,21 +67,21 @@
         </div>
 
         <div class="comentarios">
-            <div class="row space cabecalho-comentarios">
-                <div class="row qtd-comentarios">
+            <div class="cabecalho-comentarios">
+                <div class="qtd-comentarios">
                     <span class="qtd">20</span>
                     <p class="alice">Comentários</p>
                 </div>
-                <div class="row recomendar">
-                    <button class="row"><img src="../../assets/icons/recomendar-like.svg" alt="">recomendar</button>
+                <div class="recomendar">
+                    <button><img src="../../assets/icons/recomendar-like.svg" alt="">recomendar</button>
                     <span class="qtd">20</span>
                 </div>
             </div>
 
             <form class="form-comentario">
                 <textarea name="comentario" id="comentario" cols="30" rows="9" placeholder="Deixe seu comentário..." required></textarea>
-                <input type="submit" value="PUBLICAR COMENTÁRIO" class="g-3 sem-margem">
-                <div class="row opcoes-comentario">
+                <input type="submit" value="PUBLICAR COMENTÁRIO" class="btn-publicar-comentario">
+                <div class="opcoes-comentario">
                     <img src="../../assets/icons/icon-add-image.svg" alt="" class="not-margem">
                     <div class="divisor-opcoes"></div>
                     <img src="../../assets/icons/icon-bold.svg" alt="">
@@ -98,35 +93,14 @@
 
             <div class="lst-comentarios">
                 <div class="card-comentario">
-                    <div class="row left">
-                        <p>Matheus Palinkas</p> 
+                    <div class="header-comentario">
+                        <p>Palinkas</p> 
                         <div class="divisor"></div>
-                        <span>7 meses atrás</span>
+                        <span class="nunito">7 meses atrás</span>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum cursus massa ut aliquam. Pellentesque vehicula massa vel pellentesque ornare. Vivamus efficitur consequat libero, a porta massa facilisis eu. Phasellus convallis non dui eget venenatis. Cras luctus ultrices dictum. Sed vulputate sodales odio</p>
+                    <p>Ótimo post!</p>
 
                 </div>
-
-                <div class="card-comentario">
-                    <div class="row left">
-                        <p>Matheus Palinkas</p> 
-                        <div class="divisor"></div>
-                        <span>7 meses atrás</span>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum cursus massa ut aliquam. Pellentesque vehicula massa vel pellentesque ornare. Vivamus efficitur consequat libero, a porta massa facilisis eu. Phasellus convallis non dui eget venenatis. Cras luctus ultrices dictum. Sed vulputate sodales odio</p>
-
-                </div>
-
-                <div class="card-comentario">
-                    <div class="row left">
-                        <p>Matheus Palinkas</p> 
-                        <div class="divisor"></div>
-                        <span>7 meses atrás</span>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum cursus massa ut aliquam. Pellentesque vehicula massa vel pellentesque ornare. Vivamus efficitur consequat libero, a porta massa facilisis eu. Phasellus convallis non dui eget venenatis. Cras luctus ultrices dictum. Sed vulputate sodales odio</p>
-
-                </div>
-
             </div>
         </div>
     </main>
@@ -140,11 +114,11 @@
         </div>
         <div class="copy">
             <div class="container rodape">
-                <p class="g-6">Surfnet 2020 - com todos direitos reservados</p>
-                <div class="g-3 redes">
-                    <div class="rede-social"><img src="../../assets/icons/facebook.svg" alt="facebook"/></div>
-                    <div class="rede-social"><img src="../../assets/icons/instagram.svg" alt="instagram"/></div>
-                    <div class="rede-social"><img src="../../assets/icons/twitter.svg" alt="twitter"/></div>
+                <p>Surfnet 2020 - com todos direitos reservados</p>
+                <div class="redes">
+                    <a target="_blank" href="https://www.facebook.com"><div class="rede-social"><img src="../../assets/icons/facebook.svg" alt="facebook"/></div></a>
+                    <a target="_blank" href="https://www.instagram.com"><div class="rede-social"><img src="../../assets/icons/instagram.svg" alt="instagram"/></div></a>
+                    <a target="_blank" href="https://twitter.com/home?lang=pt"><div class="rede-social"><img src="../../assets/icons/twitter.svg" alt="twitter"/></div></a>
                 </div>
             </div>
         </div>

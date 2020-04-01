@@ -1,6 +1,8 @@
 /* Fontes */
 @import url('https://fonts.googleapis.com/css?family=Alice|Nunito&display=swap');
 
+
+/*Estilos gerais*/
 *, *:before, *:after {
     margin: 0;
     padding: 0;
@@ -52,10 +54,80 @@ h6{
     color: #17212B;
     display: flex;
 }
+form{
+    display: flex;
+    flex-direction: column;
+}
+form label{
+    color: #45535E;
+    font-weight: bold;
+    padding: 0;
+    font-size: 16px;
+}
+form input, form textarea, form select, .caixa-upload{
+    border: none;
+    background: #E2EBF2;
+    box-shadow: 0px 2px 2px rgba(124, 136, 148, 0.4);
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #17212B;
+    margin-bottom: 15px;
+}
+form select{
+    -webkit-appearance: none;  /* Remove estilo padrão do Chrome */
+    -moz-appearance: none; /* Remove estilo padrão do FireFox */
+    appearance: none; /* Remove estilo padrão do FireFox*/
+    background: url("../assets/icons/seta-select.svg") no-repeat ;
+    background-position: 90% center;
+    background-color: #E2EBF2;
+}
+form select option{
+    background: #E2EBF2;
+    color: #63717D;
+    font-weight: bold;
+    line-height: 200%;
+}
+form button, form input[type="submit"]{
+    text-transform: uppercase;
+    padding: 15px;
+    border: none;
+    background: #FF3726;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #F8F8F8;
+    margin-top: 15px;
+    box-shadow: 0px 2px 2px rgba(124, 136, 148, 0.4);
 
+}
+button img, input[type="submit"] img{
+    margin-left: 10px;
+    box-shadow: none;
+}
+iframe{
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px #BACBD9, 0px 5px 5px rgba(186, 203, 217, 0.3);
+    max-height: 300px;
+}
+
+
+/*Classes */
 .alice{ font-family: 'Alice';   }
 .nunito{    font-family: 'Nunito';  }
 
+.container{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.container > *{
+    margin-left: 15px;
+    margin-right: 15px;
+}
 
 .virar-contrario{
     transform: rotate(180deg);
@@ -116,71 +188,34 @@ h6{
     content: 'by';
     margin-right: 5px;
 }
-form{
-    display: flex;
-    flex-direction: column;
+@media only screen and (max-width: 739px){
+    .container{
+        max-width: 90%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    h1, h2{
+        font-size: 3.125em;
+    }
 }
-form label{
-    color: #45535E;
-    font-weight: bold;
-    padding: 0;
-    font-size: 16px;
+@media only screen and (max-width: 439px){
+    h1, h2{
+        font-size: 2.125em;
+    }
 }
-form input, form textarea, form select, .caixa-upload{
-    border: none;
-    background: #E2EBF2;
-    box-shadow: 0px 2px 2px rgba(124, 136, 148, 0.4);
-    border-radius: 5px;
-    padding: 15px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #17212B;
-    margin-bottom: 15px;
-}
-form select{
-    -webkit-appearance: none;  /* Remove estilo padrão do Chrome */
-    -moz-appearance: none; /* Remove estilo padrão do FireFox */
-    appearance: none; /* Remove estilo padrão do FireFox*/
-    background: url("../assets/icons/seta-select.svg") no-repeat ;
-    background-position: 90% center;
-    background-color: #E2EBF2;
-}
-form select option{
-    background: #E2EBF2;
-    color: #63717D;
-    font-weight: bold;
-    line-height: 200%;
-}
-form button, form input[type="submit"]{
-    text-transform: uppercase;
-    padding: 15px;
-    border: none;
-    background: #FF3726;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 16px;
-    color: #F8F8F8;
-    margin-top: 15px;
-    box-shadow: 0px 2px 2px rgba(124, 136, 148, 0.4);
 
-}
-button img, input[type="submit"] img{
-    margin-left: 10px;
-    box-shadow: none;
-}
-iframe{
-    display: block;
-    border-radius: 5px;
-    box-shadow: 0px 10px 10px #BACBD9, 0px 5px 5px rgba(186, 203, 217, 0.3);
-    max-height: 300px;
-}
+
 /* Cor do placeholder */
+
 .placeholder{   color: #63717D; }
 ::-webkit-input-placeholder { color: #63717D; }
 :-moz-placeholder { color: #63717D; }
 ::-moz-placeholder { color: #63717D; }
 :-ms-input-placeholder { color: #63717D; }
+
+
 /*Scroll*/
+
 ::-webkit-scrollbar-track {
     background-color: #E8EFF4;
 }
@@ -193,9 +228,8 @@ iframe{
 }
 
 
-
-
 /* Cabeçalho */
+
 .header-menu{
     background: #17212B;
 }
@@ -228,24 +262,28 @@ div.divisor{
     border: 2px solid #FFFFFF;
     margin: auto;
 }
-.hamburguer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    display: none;
-    padding: 5px;
-    cursor: pointer;
+@media only screen and (max-width: 739px){
+    .menu{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .header-navegacao{
+        margin: 0 auto;
+    }
 }
-.hamburguer div.line{
-    width: 40px;
-    height: 3px;
-    background: #E8EFF4;
-    margin: 5px 0;
-    border-radius: 5px;
+@media only screen and (max-width: 439px){
+    .header-navegacao ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-navegacao ul .divisor{
+        display: none;
+    }
 }
 
 
 /* Introdução */
+
 .intro{
     height: 400px;
     width: 100%;
@@ -254,17 +292,32 @@ div.divisor{
     background-size: cover;
 }
 .titulo-page{
-    width: 100%;
     margin-top: auto;
     margin-bottom: 60px;
-    display: flex;
-    justify-content: space-between;
+    align-content: flex-end;
+    min-height: 100%;
+    padding-bottom: 30px;
+}
+.titulo-page > *{
+    margin-top: auto;
 }
 .titulo-page h1{
-    min-width: 500px;
+    min-width: 420px;
+}
+@media only screen and (max-width: 739px){
+    .intro{
+        height: 250px;
+    }
+}
+@media only screen and (max-width: 439px){
+    .titulo-page h1{
+        min-width: 100%;
+    }
 }
 
+
 /* Rodapé */
+
 .coach{
     height: 250px;
     background: no-repeat;
@@ -308,6 +361,8 @@ div.divisor{
 .redes{
     display: flex;
     justify-content: space-between;
+    max-width: 200px;
+    width: 100%;
 }
 .rede-social{
     background: #E8EFF4;
@@ -324,49 +379,11 @@ div.divisor{
     height: 60%;
     
 }
-
-
-@media screen and (max-width: 934px){
-    
-    .titulo-page{
-        flex-direction: column;
-    }
-    .titulo-page h1{
-        min-width: auto;
-    }
-    .redes{
-        justify-content: flex-end;
-    }
-    .redes .rede-social{
-        margin-right: 15px;
-    }
-}
-@media (max-width: 660px){
-    .header-navegacao{
-        display: none;
-    }
-    .hamburguer{
-        display: flex;
-    }
-}
-@media (max-width: 576px) { 
-    .planos{
-        width: 90vw !important;
-    }
-    .rodape{
-        flex-direction: column;
-    }
-    .redes{
-        justify-content: start;
-    }
+@media only screen and (max-width: 739px){
     .frase-coach p{
-        font-size: 2.125em;
+        font-size: 2.5em;
     }
-
-}
-@media (max-width: 476px) { 
-    h1{
-        
-
+    .redes{
+        margin-left: 0;
     }
 }

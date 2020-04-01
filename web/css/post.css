@@ -1,3 +1,8 @@
+.titulo-page{
+    justify-content: flex-start;
+    align-items: center;
+}
+
 /* Estilos de texto do blog */
 ul.lista{
     display: flex;
@@ -13,8 +18,12 @@ ul.lista{
 }
 .lista li::before {
     content: '';
-    width: 10px;
-    height: 10px;
+    min-width: 10px;
+    min-height: 10px;
+    width: 100%;
+    height: 100%;
+    max-width: 10px;
+    max-height: 10px;
     border-radius: 50%; 
     background: #1188EE;
     margin-left: -1em;
@@ -55,7 +64,17 @@ ol.numeral{
     height: 2px;
     background: #1188EE;
 }
-
+@media only screen and (max-width: 640px){
+    .sub-titulo-blog{
+        font-size: 24px;
+    }
+    .numeral li span.azul::before{
+        margin-left: 0;
+    }
+    ul.lista{
+        margin-left: 30px;
+    }
+}
 
 /* intro */
 section.intro{
@@ -83,9 +102,13 @@ div.titulo-page h2{
 .titulo-page h1:after{
     content: ' /';
 }
+
+
+
 /* post */
 .text-post{
     margin: 60px auto;
+    max-width: 970px;
 }
 .cabecalho{
     margin-bottom: 60px;
@@ -94,12 +117,17 @@ div.titulo-page h2{
     font-size: 64px;
     text-align: center;
     color: #45535E;
+    margin-bottom: 30px;
 }
 .infos-post{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     margin: 15px auto;
     padding: 15px 30px;
     border-bottom:2px solid #BACBD9;
     border-top:2px solid #BACBD9;
+    max-width: 630px;
 }
 .infos-post img{
     margin-right: 10px;
@@ -109,6 +137,25 @@ div.titulo-page h2{
     font-size: 14px;
     font-weight: normal;
     display: flex;
+}
+@media only screen and (max-width: 980px){
+    .text-post{
+        max-width: 80%;
+    }
+}
+@media only screen and (max-width: 640px){
+    .infos-post{
+        max-width: 80%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulo-post{
+        font-size: 42px;
+    }
+    .corpo-texto p{
+        font-size: 13px;
+    }
+    
 }
 
 /* paragrafo blog */
@@ -124,10 +171,11 @@ div.titulo-page h2{
 .corpo-texto img{
     border-radius: 5px;
     box-shadow: 0px 10px 10px #BACBD9, 0px 5px 5px rgba(186, 203, 217, 0.3);
-    margin: 30px 0;
+    margin: 30px auto;
     max-height: 350px;
     object-position: bottom;
     object-fit: cover;
+    width: 100%;
 }
 
 /* comentarios */
@@ -135,6 +183,13 @@ div.titulo-page h2{
     padding-bottom: 15px;
     border-bottom: 2px solid #BACBD9;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.qtd-comentarios{
+    display: flex;
+    flex-direction: row;
 }
 .qtd-comentarios p{
     color: #45535E;
@@ -179,10 +234,11 @@ div.titulo-page h2{
     position: absolute;
     bottom: 0;
     left: 0;
-    border-radius: 0 0 0 5px;
+    border-radius: 0 0 5px 5px;
     background: #269BFF;
     height: 55px;
-    width: calc(92vw / 12 * 7);
+    width: 100%;
+    display: flex;
 }
 .opcoes-comentario img.not-margem{
     padding-left: 0;
@@ -190,6 +246,9 @@ div.titulo-page h2{
 .opcoes-comentario img{
     padding: 0 15px;
     cursor: pointer;
+}
+.btn-publicar-comentario{
+    z-index: 5;
 }
 .divisor-opcoes{
     width: 2px;
@@ -220,7 +279,43 @@ div.titulo-page h2{
     color: #45535E;
     line-height: 150%;
 }
-
+.header-comentario{
+    display: flex;
+}
+.header-comentario span{ 
+    color: #63717D;
+}
+@media only screen and (max-width: 640px){
+    .cabecalho-comentarios{
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
+    .recomendar button {
+        font-size: 16px;
+    }
+    .qtd-comentarios p{
+        font-size: 20px;
+    }
+    .qtd-comentarios{
+        margin-top: 15px;
+    }
+    .cabecalho-comentarios .qtd{
+        margin-right: 15px;
+        margin-left: 0;
+    }
+    .cabecalho-comentarios .recomendar .qtd{
+        margin-right: 0;
+    }
+    .form-comentario div.opcoes-comentario{
+        bottom: 55px;
+        border-radius: 0;
+    }
+    .form-comentario input[type="submit"]{
+        width: 100%;
+        border-radius: 0 0 5px 5px;
+    }
+}
+/* 
 @media only screen and (max-width: 940px){
     .form-comentario input[type="submit"] {
         text-align: end;
@@ -280,4 +375,4 @@ div.titulo-page h2{
     ul.lista{
         margin-left: 60px;
     }
-}
+} */

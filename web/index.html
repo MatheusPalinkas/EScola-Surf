@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" href="./assets/icons/surf.svg">
+
     <!-- folhas de estilo -->
-    <link rel="stylesheet" href="./css/grid.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/home.css" />
 
-    <title>Surf</title>
+    <title>Tá dando onda - Pagina Inicial</title>
 </head>
 <body>
     <header>
@@ -20,15 +21,14 @@
                     <p>+55 (13) 3449-9030</p>
                     <p>Rua Jorge Chaddad , 82 – Guarujá - SP</p>
             </div>
-
         </div>
 
         <div class="header-menu">
             <div class="container menu">
                 <a href="index.html" class="g-4">
-                    <img src="./assets/icons/surfbot.svg" alt="Logo da empresa">
+                    <img src="./assets/icons/logo.svg" alt="Logo da empresa">
                 </a>
-                <nav class="header-navegacao ">
+                <nav class="header-navegacao">
                     <ul class="right">
                        <li><a href="./pages/historia.html">História</a></li>
                        <li><div class="divisor"></div></li>
@@ -39,21 +39,14 @@
                        <li><a class="matricula" href="./pages/matricula.html">Matricule-se</a></li>
                     </ul>
                 </nav>
-
-                <div class="hamburguer">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
             </div>
         </div>
     </header>
 
     <section class="intro">
-     <div class="container">
-        <div class="titulo-page">
+        <div class="container titulo-page">
             <h1>Escola de Surf</h1>
-            <form class="matricula-se row sem-margem">
+            <form class="matricula-se">
                 <input type="email" name="email" id="email" placeholder="Email" required />
                 <button class="btn-matricula" type="submit">
                     Matricule-se
@@ -61,14 +54,13 @@
                 </button>
             </form>
         </div>
-     </div>
     </section>
 
-    <section class="praia container col">
+    <section class="container praia">
         <div class="descricao-praia">
-            <img src="./assets/fotos/local.jpg" alt="Bangalô da escola" class="g-5"/>
+            <img src="./assets/fotos/local.jpg" alt="Bangalô da escola"/>
 
-            <div class="qualidades sem-margem">
+            <div class="qualidades">
                 <h2><span class="azul">Aulas</span> em uma das melhores praias da <span class="azul">baixada santista</span>.</h2>
 
                 <ul class="lst-qualidades">
@@ -87,15 +79,15 @@
                 </ul>
             </div>
         </div>
-        <p class="g-10 texto-praia">A Praia do Tombo é uma das mais badaladas de Guarujá, devido as excelentes ondas que quebram ali. A praia é palco de campeonatos de surf de nível nacional e local preferido para treino de profissionais do esporte, assim como nós, por essa razão tem um palanque fixo para eventos. As ondas são cavadas, fortes, proporcionando boas manobras. No canto do forte as ondas são direitas incríveis, perfeitas, fortes e Longas. No verão a temperatura da água torna o surf mágico!</p>
+        <p class="texto-praia">A Praia do Tombo é uma das mais badaladas de Guarujá, devido as excelentes ondas que quebram ali. A praia é palco de campeonatos de surf de nível nacional e local preferido para treino de profissionais do esporte, assim como nós, por essa razão tem um palanque fixo para eventos. As ondas são cavadas, fortes, proporcionando boas manobras. No canto do forte as ondas são direitas incríveis, perfeitas, fortes e Longas. No verão a temperatura da água torna o surf mágico!</p>
     </section>
 
     <section class="aulas">
-        <div class="container col">
-            <img src="./assets/icons/ondas.svg" alt="" class="ondas"">
+        <div class="container">
+            <img src="./assets/icons/ondas.svg" alt="" class="ondas"/>
             <h2>Aulas</h2>
 
-            <ul class="planos space">
+            <ul class="planos">
                 <li class="card">
                     <img src="./assets/icons/prancha.svg" alt="">
                     <h4>Infantil</h4>
@@ -135,17 +127,18 @@
                 </li>
             </ul>
 
-            <p class="g-4 call">
+            <p class="call">
                 Possui um grupo com mais de <span class="vermelho">4 pessoas</span>? 
             </br>
                 Entre <a href="./index.html#contato" class="link">em contato</a> para um desconto especial
             </p>
+        </div>
     </section>
 
     <section class="container contato" id="contato">
         <h2>Contato</h2>
-        <div class="row infos-dados">
-            <form class="g-5">
+        <div class="infos-dados">
+            <form class="form-dados">
                 <label for="nome">Nome</label>
                 <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
 
@@ -157,10 +150,10 @@
 
                 <button type="submit" class="g-4 sem-margem">Enviar Mensagem<img src="./assets/icons/seta.svg" alt=""></button>
             </form>
-            <div class="g-2">
+            <div class="separador-info-dados">
                 <div class="linha"></div>
             </div>
-            <div class="g-5 infos-escola">
+            <div class="infos-escola">
                 <div class="dados">
                     <h6>Endereço</h6>
                     <p>Praia do Tombo</p>
@@ -181,10 +174,10 @@
             </div>
         </div>
 
-        <div class="row infos-dados como-chegar-row">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7288.949206266557!2d-46.27295492647829!3d-24.014323415915758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d1fe6dedd22e97%3A0x4529489dd5641787!2sPraia%20do%20Tombo!5e0!3m2!1spt-BR!2sbr!4v1585010002393!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="g-9 mapa-google"></iframe>
+        <div class="infos-dados como-chegar-row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7288.949206266557!2d-46.27295492647829!3d-24.014323415915758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d1fe6dedd22e97%3A0x4529489dd5641787!2sPraia%20do%20Tombo!5e0!3m2!1spt-BR!2sbr!4v1585010002393!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="mapa-google"></iframe>
 
-            <div class="g-3 chegar">
+            <div class="chegar">
                 <h6><div class="horario-funcionamento aberto"></div> Como chegar</h6>
 
                 <ul class="como-chegar">
@@ -216,11 +209,11 @@
         </div>
         <div class="copy">
             <div class="container rodape">
-                <p class="g-6">Surfnet 2020 - com todos direitos reservados</p>
-                <div class="g-3 redes sem-margem">
-                    <div class="rede-social"><img src="./assets/icons/facebook.svg" alt="facebook"/></div>
-                    <div class="rede-social"><img src="./assets/icons/instagram.svg" alt="instagram"/></div>
-                    <div class="rede-social"><img src="./assets/icons/twitter.svg" alt="twitter"/></div>
+                <p>Surfnet 2020 - com todos direitos reservados</p>
+                <div class="redes">
+                    <a target="_blank" href="https://www.facebook.com"><div class="rede-social"><img src="./assets/icons/facebook.svg" alt="facebook"/></div></a>
+                    <a target="_blank" href="https://www.instagram.com"><div class="rede-social"><img src="./assets/icons/instagram.svg" alt="instagram"/></div></a>
+                    <a target="_blank" href="https://twitter.com/home?lang=pt"><div class="rede-social"><img src="./assets/icons/twitter.svg" alt="twitter"/></div></a>
                 </div>
             </div>
         </div>

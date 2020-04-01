@@ -4,52 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" href="../assets/icons/surf.svg">
+
     <!-- folhas de estilo -->
-    <link rel="stylesheet" href="../css/grid.css" />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/matricula.css" />
 
-    <title>Surf</title>
+    <title>Tá dando onda - Matricula</title>
 </head>
 <body>
     <header>
         <div class="header-menu">
             <div class="container menu">
-                <a href="../index.html">
-                    <img src="../assets/icons/surfbot.svg" alt="Logo da empresa">
+                <a href="../index.html" class="g-4">
+                    <img src="../assets/icons/logo.svg" alt="Logo da empresa">
                 </a>
                 <nav class="header-navegacao">
-                    <ul>
-                        <li><a href="./historia.html">História</a></li>
-                        <li><div class="divisor"></div></li>
-                        <li><a href="./blog.html">Surf Blog</a></li>
-                        <li><div class="divisor"></div></li>
-                        <li><a href="../index.html#contato">Contato</a></li>
-                        <li><div class="divisor"></div></li>
-                        <li><a class="matricula" href="./matricula.html">Matricule-se</a></li>
+                    <ul class="right">
+                       <li><a href="./historia.html">História</a></li>
+                       <li><div class="divisor"></div></li>
+                       <li><a href="./blog.html">Surf Blog</a></li>
+                       <li><div class="divisor"></div></li>
+                       <li><a href="../index.html#contato">Contato</a></li>
+                       <li><div class="divisor"></div></li>
+                       <li><a class="matricula" href="./matricula.html">Matricule-se</a></li>
                     </ul>
                 </nav>
-                <div class="hamburguer">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
             </div>
         </div>
     </header>
 
-    <section class="intro">
-     <div class="container">
-        <div class="titulo-page">
-            <h1>Matricule-se</h1>
-            
+    <main class="intro">
+        <div class="container titulo-page">
+            <h1>Matricule-se</h1>  
         </div>
-     </div>
-    </section>
+    </main>
 
-    <main class="container left matricula">
-        <form class="g-6">
-            <fieldset class="col">
+    <main class="container matricula">
+        <form>
+            <fieldset>
                 <legend>Dados pessoais</legend>
                 <label for="nome">Nome Completo</label>
                 <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
@@ -60,87 +53,88 @@
                 <label for="cpf">CPF</label>
                 <input type="text" name="cpf" id="cpf" placeholder="111.111.111-11" required>
 
-                <div class="row space">
-                <div class="g-3 col">
-                    <label for="endereco">Endereço</label>
-                    <input type="text" name="endereco" id="endereco" placeholder="Rua, número, bairo" required>
-                </div>
-                <div class="g-3 sem-margem col">
-                    <label for="estado">Estado</label>
-                    <select name="estado" id="estado">
-                        <option value="0">Selecione o estado</option>
-                        <option value="AC">Acre</option>
-                        <option value="AL">Alagoas</option>
-                        <option value="AP">Amapá</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="BA">Bahia</option>
-                        <option value="CE">Ceará</option>
-                        <option value="DF">Distrito Federal</option>
-                        <option value="ES">Espírito Santo</option>
-                        <option value="GO">Goiás</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="MT">Mato Grosso</option>
-                        <option value="MS">Mato Grosso do Sul</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="PA">Pará</option>
-                        <option value="PB">Paraíba</option>
-                        <option value="PR">Paraná</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="PI">Piauí</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="RS">Rio Grande do Sul</option>
-                        <option value="RO">Rondônia</option>
-                        <option value="RR">Roraima</option>
-                        <option value="SC">Santa Catarina</option>
-                        <option value="SP">São Paulo</option>
-                        <option value="SE">Sergipe</option>
-                        <option value="TO">Tocantins</option>
-                    </select>
-                </div>
+                <div class="campos-duplos">
+                    <div>
+                        <label for="endereco">Endereço</label>
+                        <input type="text" name="endereco" id="endereco" placeholder="Rua, número, bairo" required>
+                    </div>
+                    <div class="campo-form">
+                        <label for="estado">Estado</label>
+                        <select name="estado" id="estado">
+                            <option value="0">Selecione o estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
                 </div>
 
-                <div class="row space">
-                <div class="g-3 col">
-                    <label for="cep">CEP</label>
-                    <input type="text" name="cep" id="cep" placeholder="99.999-999" required>
-                </div>
-                <div class="g-3 sem-margem col">
-                    <label for="cidade">Cidade</label>
-                    <select name="cidade" id="cidade">
-                        <option value="0">Selecione a cidade</option>
-                        <option value="13">Santos</option>
-                    </select>
-                </div>
+                <div class="campos-duplos">
+                    <div>
+                        <label for="cep">CEP</label>
+                        <input type="text" name="cep" id="cep" placeholder="99.999-999" required>
+                    </div>
+                    <div class="campo-form">
+                        <label for="cidade">Cidade</label>
+                        <select name="cidade" id="cidade">
+                            <option value="0">Selecione a cidade</option>
+                            <option value="13">Santos</option>
+                        </select>
+                    </div>
                 </div>
             </fieldset>
 
             <fieldset class="form-forma-pagar">
                 <legend>Forma de Pagamento</legend>
 
-                <div class="g-5 row formas-pagamento">
-                    <div class="row opcao-pagamento cartao" id="bg-cartao">
+                <div class="formas-pagamento">
+                    <div class="opcao-pagamento cartao" id="bg-cartao">
                         <input type="radio" name="op-pagamento" id="cartao" value="cartao" checked>
                         <label for="cartao">Cartão de Crédito</label>
 
                         <label for="cartao" class="for-select"></label>
                     </div>
-                    <div class="row opcao-pagamento boleto">
+                    <div class="opcao-pagamento boleto">
                         <input type="radio" name="op-pagamento" id="boleto" value="boleto">
                         <label for="boleto">Boleto Bancário</label>
 
                         <label for="boleto" class="for-select"></label>
                     </div>
                 </div>
+
                 <fieldset id="forma-cartao">
-                    <div class="row">
-                        <div class="g-3 col left">
+                    <div class="campos-duplos">
+                        <div>
                             <label for="nome-cartao">Nome no Cartão</label>
                             <input type="text" name="nome-cartao" id="nome-cartao" placeholder="Nome impresso no cartão" required>
                         </div>
-                        <div class=" col sem-margem space g-3" >
+                        <div>
                             <label for="data-expiracao">Data de Expiração</label>
-                            <div class="row space">
+                            <div class="campos-duplos mes-ano-data-expiracao">
                                 <select name="mes-cartao" id="mes-cartao">
                                     <option value="0">Mês</option>
                                     <option value="1">Janeiro</option>
@@ -157,7 +151,7 @@
                                     <option value="12">Dezembro</option>
                                 </select>
 
-                                <select name="ano-cartao" id="ano-cartao">
+                                <select name="ano-cartao" id="ano-cartao" class="campo-form">
                                     <option value="0">Ano</option>
                                     <option value="2019">2019</option>
                                     <option value="2019">2020</option>
@@ -176,42 +170,39 @@
                         </div>
                     </div>
 
-                    <div class="row space">
-                        <div class="g-3 col">
+                    <div class="campos-duplos">
+                        <div>
                             <label for="num-cartao">Número do Cartão</label>
                             <input type="text" name="num-cartao" id="num-cartao" placeholder="5555 5555 5555 5555" required>
                         </div>
-                        <div class="g-3 sem-margem col">
+                        <div>
                             <label for="cod-seg-cartao">Código de Segurança</label>
                             <input type="text" name="cod-seg-cartao" id="cod-seg-cartao" placeholder="XXX" required>
                         </div>
                     </div>
                 </fieldset>
     
-                <fieldset class="col" id="forma-boleto">
-                    <input type="button" value="Imprimir Boleto" class="btn g-3">
-
+                <fieldset id="forma-boleto">
+                    <input type="button" value="Imprimir Boleto" class="btn">
                     
                     <label for="upload-boleto">Anexar boleto</label>
                     <input type="file" name="upload-boleto" id="upload-boleto" required/>
                     <label for="upload-boleto" class="caixa-upload"></label>
-
-                </fieldset>
-                
+                </fieldset>         
             </fieldset>
 
             <p class="valor-pagar">Seu cartão será debitado em <span class="azul">R$ 49,00</span></p>
-            <button class="g-3" id="realizar-matricula">REALIZAR MATRÍCULA</button>
+            <button id="realizar-matricula">REALIZAR MATRÍCULA</button>
         </form>
 
-        <div class="g-6 sem-margem selecionar-plano">
+        <div class="selecionar-plano">
             <div class="planos">
                 <form action="">
                     <fieldset class="escolher-plano">
                         <legend>Escolha o plano</legend>
         
-                        <div class="row space">
-                            <div class="row opcao-plano" id="bg-infantil" >
+                        <div class="formas-pagamento">
+                            <div class="opcao-plano" id="bg-infantil" >
                                 <input type="radio" name="op-plano" id="infantil" value="infantil" checked>
                                 <label for="infantil">Infantil</label>
         
@@ -219,7 +210,7 @@
                                     <label for="infantil" class="for-select"></label>
                                 </a>
                             </div>
-                            <div class="row opcao-plano " id="bg-adulto">
+                            <div class="opcao-plano " id="bg-adulto">
                                 <input type="radio" name="op-plano" id="adulto" value="adulto" >
                                 <label for="adulto">Adulto</label>
         
@@ -227,7 +218,7 @@
                                     <label for="adulto" class="for-select"></label>
                                 </a>
                             </div>
-                            <div class="row opcao-plano " id="bg-profissional">
+                            <div class="opcao-plano " id="bg-profissional">
                                 <input type="radio" name="op-plano" id="profissional" value="profissional">
                                 <label for="profissional">Profissional</label>
                                 
@@ -278,6 +269,7 @@
         </div>
     </main>
     
+
     <footer>
         <div class="coach">
             <blockquote class="container frase-coach" cite="https://www.pensador.com/frase/NjUxMDgw/">
@@ -287,11 +279,11 @@
         </div>
         <div class="copy">
             <div class="container rodape">
-                <p class="g-6">Surfnet 2020 - com todos direitos reservados</p>
-                <div class="g-3 redes">
-                    <div class="rede-social"><img src="../assets/icons/facebook.svg" alt="facebook"/></div>
-                    <div class="rede-social"><img src="../assets/icons/instagram.svg" alt="instagram"/></div>
-                    <div class="rede-social"><img src="../assets/icons/twitter.svg" alt="twitter"/></div>
+                <p>Surfnet 2020 - com todos direitos reservados</p>
+                <div class="redes">
+                    <a target="_blank" href="https://www.facebook.com"><div class="rede-social"><img src="../assets/icons/facebook.svg" alt="facebook"/></div></a>
+                    <a target="_blank" href="https://www.instagram.com"><div class="rede-social"><img src="../assets/icons/instagram.svg" alt="instagram"/></div></a>
+                    <a target="_blank" href="https://twitter.com/home?lang=pt"><div class="rede-social"><img src="../assets/icons/twitter.svg" alt="twitter"/></div></a>
                 </div>
             </div>
         </div>
